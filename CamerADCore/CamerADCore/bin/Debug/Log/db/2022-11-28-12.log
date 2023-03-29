@@ -1,0 +1,8 @@
+数据库操作:2022-11-28 12:12:38
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-11-28 12:12:38', 21, 0, '17',0,'廖文淏','106060570',1,33,1)
+数据库操作:2022-11-28 12:12:38
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '17'
+数据库操作:2022-11-28 12:12:38
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-11-28 12:12:38', 22, 0, '18',0,'曾熔垲','106060571',1,28,1)
+数据库操作:2022-11-28 12:12:38
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '18'

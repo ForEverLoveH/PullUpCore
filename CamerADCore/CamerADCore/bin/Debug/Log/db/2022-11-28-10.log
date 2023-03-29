@@ -1,0 +1,120 @@
+数据库操作:2022-11-28 10:00:27
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-11-28 10:00:27', 7, 0, '1',0,'毛一丁','106060533',2,66,1)
+数据库操作:2022-11-28 10:00:27
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '1'
+数据库操作:2022-11-28 10:00:27
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-11-28 10:00:27', 8, 0, '2',0,'刘泽宇','106060541',2,66,1)
+数据库操作:2022-11-28 10:00:27
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '2'
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=1 and RoundId=1
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=1 and RoundId=1
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=2 and RoundId=1
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=2 and RoundId=1
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=3 and RoundId=1
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=3 and RoundId=1
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=4 and RoundId=1
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=4 and RoundId=1
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=5 and RoundId=1
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=5 and RoundId=1
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=6 and RoundId=1
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=6 and RoundId=1
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=1 and RoundId=1
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=1 and RoundId=1
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=2 and RoundId=1
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=2 and RoundId=1
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=3 and RoundId=1
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=3 and RoundId=1
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=4 and RoundId=1
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=4 and RoundId=1
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=5 and RoundId=1
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=5 and RoundId=1
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=6 and RoundId=1
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=6 and RoundId=1
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=1 and RoundId=2
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=1 and RoundId=2
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=2 and RoundId=2
+数据库操作:2022-11-28 10:00:37
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=2 and RoundId=2
+数据库操作:2022-11-28 10:03:23
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-11-28 10:03:23', 9, 0, '7',0,'林泓涛','106060549',1,49,1)
+数据库操作:2022-11-28 10:03:23
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '7'
+数据库操作:2022-11-28 10:03:23
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-11-28 10:03:23', 10, 0, '8',0,'喻戈涵','106060551',1,51,1)
+数据库操作:2022-11-28 10:03:23
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '8'
+数据库操作:2022-11-28 10:05:46
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-11-28 10:05:46', 11, 0, '9',0,'周杭','106060552',1,42,1)
+数据库操作:2022-11-28 10:05:46
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '9'
+数据库操作:2022-11-28 10:05:46
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-11-28 10:05:46', 12, 0, '10',0,'谢锐洪','106060553',1,44,1)
+数据库操作:2022-11-28 10:05:46
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '10'
+数据库操作:2022-11-28 10:07:13
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-11-28 10:07:13', 13, 0, '3',0,'陈梓煦','106060543',2,105,1)
+数据库操作:2022-11-28 10:07:13
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '3'
+数据库操作:2022-11-28 10:07:13
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-11-28 10:07:13', 14, 0, '4',0,'吴昊霖','106060545',2,119,1)
+数据库操作:2022-11-28 10:07:13
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '4'
+数据库操作:2022-11-28 10:12:36
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=7 and RoundId=1
+数据库操作:2022-11-28 10:12:36
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=7
+数据库操作:2022-11-28 10:12:36
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=8 and RoundId=1
+数据库操作:2022-11-28 10:12:36
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=8
+数据库操作:2022-11-28 10:12:36
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=9 and RoundId=1
+数据库操作:2022-11-28 10:12:36
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=9
+数据库操作:2022-11-28 10:12:36
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=10 and RoundId=1
+数据库操作:2022-11-28 10:12:36
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=10
+数据库操作:2022-11-28 10:12:36
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=3 and RoundId=2
+数据库操作:2022-11-28 10:12:36
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=3
+数据库操作:2022-11-28 10:12:36
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=4 and RoundId=2
+数据库操作:2022-11-28 10:12:36
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=4
+数据库操作:2022-11-28 10:18:28
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-11-28 10:18:28', 15, 0, '11',0,'郑子罗','106060558',1,55,1)
+数据库操作:2022-11-28 10:18:28
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '11'
+数据库操作:2022-11-28 10:18:28
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-11-28 10:18:28', 16, 0, '12',0,'蔡天麒','106060560',1,66,1)
+数据库操作:2022-11-28 10:18:28
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '12'

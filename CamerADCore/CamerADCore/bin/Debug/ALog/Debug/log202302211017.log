@@ -1,0 +1,31 @@
+
+
+Date：2023-02-21 10:17:56.448
+LogLevel：Debug
+Message： 
+****************************异常文本****************************
+【出现时间】：2023/2/21 10:17:56
+【异常类型】：SQLiteException
+【异常信息】：unable to open database file
+【堆栈调用】：   在 System.Data.SQLite.SQLite3.Open(String strFilename, String vfsName, SQLiteConnectionFlags connectionFlags, SQLiteOpenFlagsEnum openFlags, Int32 maxPoolSize, Boolean usePool)
+   在 System.Data.SQLite.SQLiteConnection.Open()
+   在 CameraADCoreModel.ADCoreSqlite.SQLiteHelper.PrepareCommand(SQLiteCommand cmd, SQLiteConnection conn, String cmdText, Dictionary`2 data) 位置 D:\WorkProject\C#Project\机器测试\CamerADCore\CameraADCoreModel\ADCoreSqlite\SQLiteHelper.cs:行号 115
+【异常方法】：Void Open(System.String, System.String, System.Data.SQLite.SQLiteConnectionFlags, System.Data.SQLite.SQLiteOpenFlagsEnum, Int32, Boolean)
+***************************************************************
+
+--------------------------------------------------
+
+Date：2023-02-21 10:17:56.462
+LogLevel：Debug
+Message： 
+****************************异常文本****************************
+【出现时间】：2023/2/21 10:17:56
+【异常类型】：InvalidOperationException
+【异常信息】：No connection associated with this command
+【堆栈调用】：   在 System.Data.SQLite.SQLiteCommand.InitializeForReader()
+   在 System.Data.SQLite.SQLiteCommand.ExecuteReader(CommandBehavior behavior)
+   在 CameraADCoreModel.ADCoreSqlite.SQLiteHelper.ExecuteReader(String cmdText, Dictionary`2 data) 位置 D:\WorkProject\C#Project\机器测试\CamerADCore\CameraADCoreModel\ADCoreSqlite\SQLiteHelper.cs:行号 246
+【异常方法】：Void InitializeForReader()
+***************************************************************
+
+--------------------------------------------------

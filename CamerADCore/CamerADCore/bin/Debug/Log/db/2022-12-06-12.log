@@ -1,0 +1,12 @@
+数据库操作:2022-12-06 12:54:07
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-12-06 12:54:07', 29, 0, '21',0,'于芷涵','106060526',1,21,1)
+数据库操作:2022-12-06 12:54:07
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '21'
+数据库操作:2022-12-06 12:54:07
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-12-06 12:54:07', 30, 0, '22',0,'吕昕蓓','106060527',1,18,1)
+数据库操作:2022-12-06 12:54:07
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '22'
+数据库操作:2022-12-06 12:54:07
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-12-06 12:54:07', 31, 0, '23',0,'吕乐薇','106060528',1,15,1)
+数据库操作:2022-12-06 12:54:07
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '23'

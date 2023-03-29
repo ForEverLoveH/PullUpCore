@@ -1,0 +1,6 @@
+数据库操作:2022-11-21 14:40:48
+UPDATE DbPersonInfos SET State=1,FinalScore=1 WHERE Id='1'
+数据库操作:2022-11-21 14:40:48
+UPDATE ResultInfos SET State=3,Result='0' WHERE PersonId='1' AND RoundId=1 AND IsRemoved=0
+数据库操作:2022-11-21 14:40:48
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-11-21 14:40:48', 1, 0, '1',0,'吴昕晨','G320801200611060848',1,0,3)

@@ -1,0 +1,82 @@
+数据库操作:2023-02-22 11:02:21
+DELETE FROM SportProjectInfos WHERE Id = '2'
+数据库操作:2023-02-22 11:02:21
+DELETE FROM DbGroupInfos WHERE ProjectId = '2'
+数据库操作:2023-02-22 11:02:21
+DELETE FROM DbPersonInfos WHERE ProjectId = '2'
+数据库操作:2023-02-22 11:05:16
+INSERT INTO SportProjectInfos (CreateTime, SortId, IsRemoved, Name, Type, RoundCount, BestScoreMode, TestMethod, FloatType ) VALUES(datetime(CURRENT_TIMESTAMP, 'localtime'),1,0,'引体向上',0,2,0,0,2)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbGroupInfos(CreateTime,SortId,IsRemoved,ProjectId,Name,IsAllTested) VALUES('2022-11-1',247,0,'2','1',0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbGroupInfos(CreateTime,SortId,IsRemoved,ProjectId,Name,IsAllTested) VALUES('2022-11-1',248,0,'2','2',0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbGroupInfos(CreateTime,SortId,IsRemoved,ProjectId,Name,IsAllTested) VALUES('2022-11-1',249,0,'2','3',0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4892,0,'2','培林学校','初二','1班','1','臧世清','1001',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4893,0,'2','培林学校','初二','1班','1','胡晓彬','1002',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4894,0,'2','培林学校','初二','1班','1','赵友','1003',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4895,0,'2','培林学校','初二','1班','1','黄诚','1004',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4896,0,'2','培林学校','初二','1班','1','傅鹏','1005',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4897,0,'2','培林学校','初二','1班','1','杨天宇','1006',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4898,0,'2','培林学校','初二','1班','1','钟臧岭','1007',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4899,0,'2','培林学校','初二','1班','1','吴继福','1008',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4900,0,'2','培林学校','初二','1班','2','徐浩然','1009',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4901,0,'2','培林学校','初二','1班','2','李子轩','1010',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4902,0,'2','培林学校','初二','1班','2','王运','1011',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4903,0,'2','培林学校','初二','1班','2','陈艺文','1012',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4904,0,'2','培林学校','初二','1班','2','张文信','1013',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4905,0,'2','培林学校','初二','1班','2','汤益军','1014',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4906,0,'2','培林学校','初二','1班','2','徐佳成','1015',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4907,0,'2','培林学校','初二','1班','2','王豪政','1016',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4908,0,'2','培林学校','初二','1班','2','刘昊','1017',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4909,0,'2','培林学校','初二','1班','2','陈宜杰','1018',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4910,0,'2','培林学校','初二','1班','3','杨宇杰','1019',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4911,0,'2','培林学校','初二','1班','3','张梓健','1020',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4912,0,'2','培林学校','初二','1班','3','龚兆杰','1021',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4913,0,'2','培林学校','初二','1班','3','吴翔宇','1022',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4914,0,'2','培林学校','初二','1班','3','孙旭','1023',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4915,0,'2','培林学校','初二','1班','3','陶国庆','1024',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4916,0,'2','培林学校','初二','1班','3','赵泽阳','1025',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4917,0,'2','培林学校','初二','1班','3','孙翔','1026',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4918,0,'2','培林学校','初二','1班','3','高文宏','1027',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4919,0,'2','培林学校','初二','1班','3','周俊宇','1028',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4920,0,'2','培林学校','初二','1班','3','王加琪','1029',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4921,0,'2','培林学校','初二','1班','3','王子龙','1030',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4922,0,'2','培林学校','初二','1班','3','何冠杰','1031',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4923,0,'2','培林学校','初二','1班','3','刘杰宇','1032',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4924,0,'2','培林学校','初二','1班','3','冯志国','1033',0,0,-1,0)
+数据库操作:2023-02-22 11:08:03
+INSERT INTO DbPersonInfos(CreateTime,SortId,IsRemoved,ProjectId,SchoolName,GradeName,ClassNumber,GroupName,Name,IdNumber,Sex,State,FinalScore,uploadState) VALUES('2022-11-1',4925,0,'2','培林学校','初二','1班','3','王鹏翔','1034',0,0,-1,0)

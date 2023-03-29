@@ -1,0 +1,8 @@
+数据库操作:2023-02-23 10:54:25
+UPDATE ResultInfos SET Result=30,State=1 WHERE PersonId='1' AND RoundId=1
+数据库操作:2023-02-23 10:54:28
+UPDATE DbPersonInfos  SET State=1,FinalScore=1 WHERE ProjectId='1' AND IdNumber='106060533'
+数据库操作:2023-02-23 10:56:49
+UPDATE ResultInfos SET Result=30,State=1 WHERE PersonId='2' AND RoundId=1
+数据库操作:2023-02-23 10:56:49
+UPDATE DbPersonInfos  SET State=1,FinalScore=1 WHERE ProjectId='1' AND IdNumber='106060541'

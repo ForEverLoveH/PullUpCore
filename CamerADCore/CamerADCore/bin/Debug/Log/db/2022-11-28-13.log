@@ -1,0 +1,392 @@
+数据库操作:2022-11-28 13:39:05
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-11-28 13:39:05', 23, 0, '19',0,'陈立洲','106060573',1,42,1)
+数据库操作:2022-11-28 13:39:05
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '19'
+数据库操作:2022-11-28 13:39:05
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-11-28 13:39:05', 24, 0, '20',0,'叶嘉','106060574',1,47,1)
+数据库操作:2022-11-28 13:39:05
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '20'
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=1 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=1 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=2 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=2 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=3 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=3 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=4 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=4 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=5 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=5 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=6 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=6 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=7 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=7 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=8 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=8 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=9 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=9 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=10 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=10 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=11 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=11 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=12 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=12 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=13 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=13 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=14 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=14 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=15 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=15 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=16 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=16 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=17 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=17 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=18 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=18 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=19 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=19 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=20 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=20 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=1 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=1 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=2 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=2 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=3 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=3 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=4 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=4 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=5 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=5 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=6 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=6 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=7 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=7 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=8 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=8 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=9 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=9 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=10 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=10 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=11 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=11 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=12 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=12 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=13 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=13 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=14 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=14 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=15 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=15 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=16 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=16 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=17 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=17 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=18 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=18 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=19 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=19 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=20 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=20 and RoundId=1
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=1 and RoundId=2
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=1 and RoundId=2
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=2 and RoundId=2
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=2 and RoundId=2
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=3 and RoundId=2
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=3 and RoundId=2
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=4 and RoundId=2
+数据库操作:2022-11-28 13:39:22
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=4 and RoundId=2
+数据库操作:2022-11-28 13:40:41
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-11-28 13:40:41', 25, 0, '5',0,'娄颢霆','106060546',2,48,1)
+数据库操作:2022-11-28 13:40:41
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '5'
+数据库操作:2022-11-28 13:40:41
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-11-28 13:40:41', 26, 0, '6',0,'梁子璁','106060547',2,53,1)
+数据库操作:2022-11-28 13:40:41
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '6'
+数据库操作:2022-11-28 13:41:17
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-11-28 13:41:17', 27, 0, '7',0,'林泓涛','106060549',2,31,1)
+数据库操作:2022-11-28 13:41:17
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '7'
+数据库操作:2022-11-28 13:41:17
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-11-28 13:41:17', 28, 0, '8',0,'喻戈涵','106060551',2,33,1)
+数据库操作:2022-11-28 13:41:17
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '8'
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=1 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=1 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=2 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=2 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=3 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=3 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=4 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=4 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=5 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=5 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=6 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=6 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=7 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=7 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=8 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=8 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=9 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=9 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=10 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=10 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=11 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=11 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=12 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=12 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=13 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=13 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=14 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=14 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=15 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=15 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=16 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=16 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=17 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=17 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=18 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=18 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=19 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=19 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=20 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=20 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=1 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=1 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=2 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=2 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=3 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=3 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=4 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=4 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=5 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=5 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=6 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=6 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=7 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=7 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=8 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=8 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=9 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=9 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=10 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=10 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=11 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=11 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=12 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=12 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=13 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=13 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=14 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=14 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=15 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=15 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=16 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=16 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=17 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=17 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=18 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=18 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=19 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=19 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=20 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=20 and RoundId=1
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=1 and RoundId=2
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=1 and RoundId=2
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=2 and RoundId=2
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=2 and RoundId=2
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=3 and RoundId=2
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=3 and RoundId=2
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=4 and RoundId=2
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=4 and RoundId=2
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=5 and RoundId=2
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=5 and RoundId=2
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=6 and RoundId=2
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=6 and RoundId=2
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=7 and RoundId=2
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=7 and RoundId=2
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=8 and RoundId=2
+数据库操作:2022-11-28 13:41:27
+UPDATE ResultInfos SET uploadState=1 WHERE PersonId=8 and RoundId=2

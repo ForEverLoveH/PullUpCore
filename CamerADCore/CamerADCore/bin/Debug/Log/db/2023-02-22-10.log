@@ -1,0 +1,8 @@
+数据库操作:2023-02-22 10:53:22
+DELETE FROM SportProjectInfos WHERE Id = '1'
+数据库操作:2023-02-22 10:53:22
+DELETE FROM DbGroupInfos WHERE ProjectId = '1'
+数据库操作:2023-02-22 10:53:22
+DELETE FROM DbPersonInfos WHERE ProjectId = '1'
+数据库操作:2023-02-22 10:57:19
+INSERT INTO SportProjectInfos (CreateTime, SortId, IsRemoved, Name, Type, RoundCount, BestScoreMode, TestMethod, FloatType ) VALUES(datetime(CURRENT_TIMESTAMP, 'localtime'),1,0,'引体向上',0,2,0,0,2)

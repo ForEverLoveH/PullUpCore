@@ -1,0 +1,11 @@
+D:\WorkProject\C#Project\机器测试\CamerADCore\LoggerHelper\bin\Debug\LoggerHelper.dll
+D:\WorkProject\C#Project\机器测试\CamerADCore\LoggerHelper\bin\Debug\LoggerHelper.pdb
+D:\WorkProject\C#Project\机器测试\CamerADCore\LoggerHelper\bin\Debug\log4net.dll
+D:\WorkProject\C#Project\机器测试\CamerADCore\LoggerHelper\bin\Debug\Serilog.dll
+D:\WorkProject\C#Project\机器测试\CamerADCore\LoggerHelper\bin\Debug\log4net.xml
+D:\WorkProject\C#Project\机器测试\CamerADCore\LoggerHelper\bin\Debug\Serilog.xml
+D:\WorkProject\C#Project\机器测试\CamerADCore\LoggerHelper\obj\Debug\LoggerHelper.csproj.AssemblyReference.cache
+D:\WorkProject\C#Project\机器测试\CamerADCore\LoggerHelper\obj\Debug\LoggerHelper.csproj.CoreCompileInputs.cache
+D:\WorkProject\C#Project\机器测试\CamerADCore\LoggerHelper\obj\Debug\LoggerHelper.csproj.CopyComplete
+D:\WorkProject\C#Project\机器测试\CamerADCore\LoggerHelper\obj\Debug\LoggerHelper.dll
+D:\WorkProject\C#Project\机器测试\CamerADCore\LoggerHelper\obj\Debug\LoggerHelper.pdb

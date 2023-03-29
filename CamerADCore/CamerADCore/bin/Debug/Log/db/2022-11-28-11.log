@@ -1,0 +1,16 @@
+数据库操作:2022-11-28 11:23:02
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-11-28 11:23:02', 17, 0, '13',0,'毛铭禹','106060561',1,36,1)
+数据库操作:2022-11-28 11:23:02
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '13'
+数据库操作:2022-11-28 11:23:02
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-11-28 11:23:02', 18, 0, '14',0,'刘昕宇','106060563',1,36,1)
+数据库操作:2022-11-28 11:23:02
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '14'
+数据库操作:2022-11-28 11:26:35
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-11-28 11:26:35', 19, 0, '15',0,'黄彦玮','106060565',1,33,1)
+数据库操作:2022-11-28 11:26:35
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '15'
+数据库操作:2022-11-28 11:26:35
+INSERT INTO ResultInfos(CreateTime,SortId,IsRemoved,PersonId,SportItemType,PersonName,PersonIdNumber,RoundId,Result,State) VALUES('2022-11-28 11:26:35', 20, 0, '16',0,'杨霖祉','106060566',1,36,1)
+数据库操作:2022-11-28 11:26:35
+UPDATE DbPersonInfos SET State = 1, FinalScore = 1 WHERE Id = '16'

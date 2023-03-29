@@ -1,0 +1,14 @@
+
+
+Date：2023-02-21 16:18:42.515
+LogLevel：Debug
+Message： 
+****************************异常文本****************************
+【出现时间】：2023/2/21 16:18:42
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 CamerADCore.GameSystem.GameWindowSys.ProjectSettingWindowSys.DeleteCurrentChooseStudentData(String text, Int32 count, UCDataGridView ucDataGridView1) 位置 D:\WorkProject\C#Project\机器测试\CamerADCore\CamerADCore\GameSystem\GameWindowSys\ProjectSettingWindowSys.cs:行号 137
+【异常方法】：Boolean DeleteCurrentChooseStudentData(System.String, Int32, HZH_Controls.Controls.UCDataGridView)
+***************************************************************
+
+--------------------------------------------------

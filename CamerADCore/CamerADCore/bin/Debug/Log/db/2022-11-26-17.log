@@ -1,0 +1,4 @@
+数据库操作:2022-11-26 17:39:25
+UPDATE ResultInfos SET Result=36,State=1 WHERE PersonId='1' AND RoundId=1
+数据库操作:2022-11-26 17:39:25
+UPDATE DbPersonInfos  SET State=1,FinalScore=1 WHERE ProjectId='1' AND IdNumber='G320801200611060848'

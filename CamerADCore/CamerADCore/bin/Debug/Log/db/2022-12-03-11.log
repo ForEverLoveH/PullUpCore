@@ -1,0 +1,2 @@
+数据库操作:2022-12-03 11:07:31
+UPDATE SportProjectInfos SET Name='培林小学仰卧起坐', Type=1,RoundCount=2,BestScoreMode=0,TestMethod=0,FloatType=2 where Id='1'
