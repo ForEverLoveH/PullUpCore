@@ -455,11 +455,12 @@ namespace CamerADCore.GameSystem.GameWindow
         {
             try
             {
-             RunningTestingWindowSys.Instance.MatchDataSendInfoFun(RaceStudentDataLists,autoMatchFlag,SerialReader,_userControl1s);
+                RunningTestingWindowSys.Instance.MatchDataSendInfoFun(RaceStudentDataLists,autoMatchFlag,SerialReader,_userControl1s);
             }
             catch (Exception e)
             {
                 LoggerHelper.Debug(e);
+                return;
             }
         }
         
@@ -533,7 +534,7 @@ namespace CamerADCore.GameSystem.GameWindow
                 return;
             }
 
-            bool sl =    RunningTestingWindowSys.Instance.WriteScoreIntoDataBase(RaceStudentDataLists, CurrentRoundCount);
+            bool sl =  RunningTestingWindowSys.Instance.WriteScoreIntoDataBase(RaceStudentDataLists, CurrentRoundCount);
             if (sl)
             {
                 UIMessageBox.ShowSuccess("写入成功@！！");
@@ -594,20 +595,19 @@ namespace CamerADCore.GameSystem.GameWindow
             ControlHelper.ThreadInvokerControl(this, () =>
             {
                 int index = equipmentCountCbx.SelectedIndex + 1;
-                
-                {  for (int i = 0; i < index; i++)
-                    {
-                        _userControl1s[i].Visible = true;
-                    }
-                    if (index < _userControl1s.Count)
-                    {
-                        for (int i = index; i < _userControl1s.Count; i++)
-                        {
-                           _userControl1s[i].Visible = false;
-                        }
-                    }
-                    equipmentCount = index;
+                for (int i = 0; i < index; i++)
+                {
+                    _userControl1s[i].Visible = true;
                 }
+                if (index < _userControl1s.Count)
+                {
+                    for (int i = index; i < _userControl1s.Count; i++)
+                    {
+                        _userControl1s[i].Visible = false;
+                    }
+                }
+                equipmentCount = index;
+                
             });
         }
         /// <summary>
@@ -868,6 +868,10 @@ namespace CamerADCore.GameSystem.GameWindow
              {
                  RunningTestingWindowSys.Instance.UpdataGroupListView(ProjectID,GroupName,CurrentRoundCount,CurrentGroupStudentData,label13);
              }
+             else
+             {
+                 return;
+             }
          }
          /// <summary>
          /// 
@@ -916,7 +920,7 @@ namespace CamerADCore.GameSystem.GameWindow
                  }
                  else
                  {
-                      string groupName =    GroupCombox.Text;
+                     string groupName =    GroupCombox.Text;
                      if (RunningTestingWindowSys.Instance.ShowModifyWindow(ProjectID,ProjectName,groupName,CurrentRoundCount,CurrentGroupStudentData,ref  FrmModifyScoreOneRoundShow))
                      {
                          UIMessageBox.ShowSuccess("修改成功！！");

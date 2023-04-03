@@ -1,0 +1,85 @@
+
+
+Date：2023-04-01 10:59:27.726
+LogLevel：Error
+Message： 
+****************************异常文本****************************
+【出现时间】：2023/4/1 10:59:27
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 CamerADCore.GameSystem.GameWindow.MainWindow.ucNavigationMenu1_ClickItemed(Object sender, EventArgs e) 位置 D:\WorkProject\C#Project\机器测试\引体向上\德育龙\PullUpCore\CamerADCore\CamerADCore\GameSystem\GameWindow\MainWindow.cs:行号 101
+   在 HZH_Controls.Controls.UCNavigationMenu.lbl_Click(Object sender, EventArgs e)
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Label.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+【异常方法】：Void ucNavigationMenu1_ClickItemed(System.Object, System.EventArgs)
+***************************************************************
+
+--------------------------------------------------
+
+Date：2023-04-01 10:59:29.988
+LogLevel：Error
+Message： 
+****************************异常文本****************************
+【出现时间】：2023/4/1 10:59:29
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 CamerADCore.GameSystem.GameWindow.MainWindow.ucNavigationMenu1_ClickItemed(Object sender, EventArgs e) 位置 D:\WorkProject\C#Project\机器测试\引体向上\德育龙\PullUpCore\CamerADCore\CamerADCore\GameSystem\GameWindow\MainWindow.cs:行号 101
+   在 HZH_Controls.Controls.UCNavigationMenu.lbl_Click(Object sender, EventArgs e)
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Label.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+【异常方法】：Void ucNavigationMenu1_ClickItemed(System.Object, System.EventArgs)
+***************************************************************
+
+--------------------------------------------------
+
+Date：2023-04-01 10:59:30.817
+LogLevel：Error
+Message： 
+****************************异常文本****************************
+【出现时间】：2023/4/1 10:59:30
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 CamerADCore.GameSystem.GameWindow.MainWindow.ucNavigationMenu1_ClickItemed(Object sender, EventArgs e) 位置 D:\WorkProject\C#Project\机器测试\引体向上\德育龙\PullUpCore\CamerADCore\CamerADCore\GameSystem\GameWindow\MainWindow.cs:行号 101
+   在 HZH_Controls.Controls.UCNavigationMenu.lbl_Click(Object sender, EventArgs e)
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Label.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+【异常方法】：Void ucNavigationMenu1_ClickItemed(System.Object, System.EventArgs)
+***************************************************************
+
+--------------------------------------------------
+
+Date：2023-04-01 10:59:31.212
+LogLevel：Error
+Message： 
+****************************异常文本****************************
+【出现时间】：2023/4/1 10:59:31
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 CamerADCore.GameSystem.GameWindow.MainWindow.ucNavigationMenu1_ClickItemed(Object sender, EventArgs e) 位置 D:\WorkProject\C#Project\机器测试\引体向上\德育龙\PullUpCore\CamerADCore\CamerADCore\GameSystem\GameWindow\MainWindow.cs:行号 101
+   在 HZH_Controls.Controls.UCNavigationMenu.lbl_Click(Object sender, EventArgs e)
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Label.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+【异常方法】：Void ucNavigationMenu1_ClickItemed(System.Object, System.EventArgs)
+***************************************************************
+
+--------------------------------------------------
