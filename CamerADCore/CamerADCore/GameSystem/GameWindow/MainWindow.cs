@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -97,41 +98,46 @@ namespace CamerADCore.GameSystem.GameWindow
             {
                 switch (name)
                 {
-                    case "启动测试": 
+                    case "启动测试":
                         string FullPaths = GroupTreeView.SelectedNode.FullPath;
-                        string[] fusp = FullPaths.Split('\\');
-                        if(fusp.Length > 0)
+                        if (!string.IsNullOrEmpty(FullPaths))
                         {
-                            List<Dictionary<string, string>> list = MainWindowSys.Instance.GetCurrentGroupData(fusp[0]);
-                            if (list.Count == 1)
+                            string[] fusp = FullPaths.Split('\\');
+                            if (fusp.Length > 0)
                             {
-                                try
+                                List<Dictionary<string, string>> list = MainWindowSys.Instance.GetCurrentGroupData(fusp[0]);
+                                if (list.Count == 1)
                                 {
-                                    Dictionary<string, string> dic = list[0];
-                                    int.TryParse(dic["Type"], out int state);
-                                    this.Hide();
-                                    MainWindowSys.Instance.ShowRunningTestingWindow(fusp, dic);
-                                    if (!string.IsNullOrEmpty(projectName))
+                                    try
                                     {
-                                        HZH_Controls.ControlHelper.ThreadInvokerControl(this,
-                                            () =>
-                                            {
-                                                MainWindowSys.Instance.UpDataStudentDataView(treeGroupText, projectName,
-                                                    ref projectId, StudentDataListview);
-                                            });
+                                        Dictionary<string, string> dic = list[0];
+                                        int.TryParse(dic["Type"], out int state);
+                                        this.Hide();
+                                        MainWindowSys.Instance.ShowRunningTestingWindow(fusp, dic);
+                                        if (!string.IsNullOrEmpty(projectName))
+                                        {
+                                            HZH_Controls.ControlHelper.ThreadInvokerControl(this,
+                                                () =>
+                                                {
+                                                    MainWindowSys.Instance.UpDataStudentDataView(treeGroupText, projectName,
+                                                        ref projectId, StudentDataListview);
+                                                });
+                                        }
                                     }
-                                }
-                                catch (Exception exception)
-                                {
-                                    LoggerHelper.Debug(exception);
-                                    return;
-                                }
-                                finally
-                                {
-                                    this.Show();
+                                    catch (Exception exception)
+                                    {
+                                        LoggerHelper.Debug(exception);
+                                        return;
+                                    }
+                                    finally
+                                    {
+                                        this.Show();
+                                    }
                                 }
                             }
                         }
+                        else
+                            return;
                         break;
                     case "项目设置":
                         MainWindowSys.Instance.ShowProjectSettingWindow();
@@ -163,6 +169,7 @@ namespace CamerADCore.GameSystem.GameWindow
                             UIMessageBox.ShowError("数据库初始化失败！！");
                             return;
                         }
+                             
                         break;
                     case "数据库备份":
                         DialogResult di = MessageBox.Show("该操作将会将数据库备份，是否继续？", "提示", MessageBoxButtons.YesNoCancel,

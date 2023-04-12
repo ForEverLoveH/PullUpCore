@@ -69,7 +69,13 @@ namespace CamerADCore.GameSystem.GameHelper
             iSerialPort = new SerialPort();
             iSerialPort.DataReceived += new SerialDataReceivedEventHandler(ReceivedComData);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="strPort"></param>
+        /// <param name="nBaudrate"></param>
+        /// <param name="strException"></param>
+        /// <returns></returns>
         public int OpenCom(string strPort, int nBaudrate, out string strException)
         {
             strException = string.Empty;
