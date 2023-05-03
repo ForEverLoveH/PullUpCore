@@ -8,11 +8,21 @@ namespace CameraADCoreModel.GameModel
 {
     public class ExcelUtils
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="path"></param>
+        /// <param name="value"></param>
         public static void MiniExcel_OutPutExcel(string path, object value)
         {
             MiniExcel.SaveAs(path, value);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="ldic"></param>
+        /// <param name="path"></param>
+        /// <returns></returns>
         public static bool OutPutExcel(List<Dictionary<string, string>> ldic, string path)
         {
             bool result = false;

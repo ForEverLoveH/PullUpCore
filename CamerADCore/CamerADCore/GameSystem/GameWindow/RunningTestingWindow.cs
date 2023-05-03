@@ -776,7 +776,7 @@ namespace CamerADCore.GameSystem.GameWindow
                         btnClearMatch.Enabled = false;
                         btnUpload.Enabled = false;
                         btnReGetScore.Enabled = false;
-                       tsetLabel.Text = "测试中";
+                        tsetLabel.Text = "测试中";
                         for (int i = 0; i < _userControl1s.Count; i++)
                         {
                             _userControl1s[i].Panel_Ready = false;
@@ -825,7 +825,7 @@ namespace CamerADCore.GameSystem.GameWindow
                  DialogResult result = MessageBox.Show("是否重取成绩!!!", "提示", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                  if (result != DialogResult.Yes) return;
                  //string code = "reSendScore";
-                 if (RunningTestingWindowSys.Instance.IsSerialOpenConnection( SerialReader))
+                 if (RunningTestingWindowSys.Instance.IsSerialOpenConnection(SerialReader))
                  {
                      string code = "Post All Score";
                      byte[] WriteBufferALL = System.Text.Encoding.Default.GetBytes(code);
@@ -1049,7 +1049,7 @@ namespace CamerADCore.GameSystem.GameWindow
 
                          serialConnectStripStatusLabel1.Text = $"串口:{port}已连接";
                          serialConnectStripStatusLabel1.ForeColor = Color.Green;
-                        uiGroupBox5.Enabled = true;
+                         uiGroupBox5.Enabled = true;
                          m_reader_connect_mode = 1;
                      }
                  }
@@ -1092,9 +1092,7 @@ namespace CamerADCore.GameSystem.GameWindow
                  SerialReader.CloseCom();
          }
          #endregion
-
-
-         
+    
     }
 
         

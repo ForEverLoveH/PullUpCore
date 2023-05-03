@@ -222,22 +222,18 @@ namespace CamerADCore.GameSystem.GameWindowSys
                         {
                             dataGridViewRow.Cells.Add(GetNewDataGridViewCell("未上传", Color.Red, Color.White));
                         }
-
                         break;
                     }
-
                     if (flag)
                     {
                         dataGridViewRow.Cells.Add(GetNewDataGridViewCell("无成绩", Color.Black, Color.White));
                         dataGridViewRow.Cells.Add(GetNewDataGridViewCell(idNumber, Color.Black, Color.White));
                         dataGridViewRow.Cells.Add(GetNewDataGridViewCell("未上传", Color.Red, Color.White));
                     }
-
                     dataGridViewRow.Cells.Add(GetNewDataGridViewCell(stuId, Color.Black, Color.White));
                     rows[listViewCount - 1] = dataGridViewRow;
                     listViewCount++;
                 }
-
                 currentGroupStudentData.Rows.Clear();
                 currentGroupStudentData.Rows.AddRange(rows);
                 int mcont = sum - finishSum;
