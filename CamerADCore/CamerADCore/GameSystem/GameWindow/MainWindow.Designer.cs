@@ -145,6 +145,7 @@
             this.GroupTreeView.Size = new System.Drawing.Size(450, 675);
             this.GroupTreeView.TabIndex = 0;
             this.GroupTreeView.NodeMouseClick += new System.Windows.Forms.TreeNodeMouseClickEventHandler(this.GroupTreeView_NodeMouseClick);
+            this.GroupTreeView.MouseDown += new System.Windows.Forms.MouseEventHandler(this.GroupTreeView_MouseDown);
             // 
             // ucNavigationMenu1
             // 
@@ -175,7 +176,9 @@
             navigationMenuItem3.ShowTip = false;
             navigationMenuItem3.Text = "系统参数设置";
             navigationMenuItem3.TipText = null;
-            navigationMenuItem1.Items = new HZH_Controls.Controls.NavigationMenuItem[] { navigationMenuItem2, navigationMenuItem3 };
+            navigationMenuItem1.Items = new HZH_Controls.Controls.NavigationMenuItem[] {
+        navigationMenuItem2,
+        navigationMenuItem3};
             navigationMenuItem1.ItemWidth = 130;
             navigationMenuItem1.ShowTip = false;
             navigationMenuItem1.Text = "系统管理";
@@ -202,7 +205,9 @@
             navigationMenuItem6.ShowTip = false;
             navigationMenuItem6.Text = "数据库备份";
             navigationMenuItem6.TipText = null;
-            navigationMenuItem4.Items = new HZH_Controls.Controls.NavigationMenuItem[] { navigationMenuItem5, navigationMenuItem6 };
+            navigationMenuItem4.Items = new HZH_Controls.Controls.NavigationMenuItem[] {
+        navigationMenuItem5,
+        navigationMenuItem6};
             navigationMenuItem4.ItemWidth = 130;
             navigationMenuItem4.ShowTip = false;
             navigationMenuItem4.Text = "数据管理";
@@ -229,7 +234,9 @@
             navigationMenuItem9.ShowTip = false;
             navigationMenuItem9.Text = "导入名单模板";
             navigationMenuItem9.TipText = null;
-            navigationMenuItem7.Items = new HZH_Controls.Controls.NavigationMenuItem[] { navigationMenuItem8, navigationMenuItem9 };
+            navigationMenuItem7.Items = new HZH_Controls.Controls.NavigationMenuItem[] {
+        navigationMenuItem8,
+        navigationMenuItem9};
             navigationMenuItem7.ItemWidth = 100;
             navigationMenuItem7.ShowTip = false;
             navigationMenuItem7.Text = "帮助";
@@ -283,12 +290,21 @@
             navigationMenuItem15.ShowTip = false;
             navigationMenuItem15.Text = "导出成绩";
             navigationMenuItem15.TipText = null;
-            navigationMenuItem12.Items = new HZH_Controls.Controls.NavigationMenuItem[] { navigationMenuItem13, navigationMenuItem14, navigationMenuItem15 };
+            navigationMenuItem12.Items = new HZH_Controls.Controls.NavigationMenuItem[] {
+        navigationMenuItem13,
+        navigationMenuItem14,
+        navigationMenuItem15};
             navigationMenuItem12.ItemWidth = 100;
             navigationMenuItem12.ShowTip = false;
             navigationMenuItem12.Text = "成绩管理";
             navigationMenuItem12.TipText = null;
-            this.ucNavigationMenu1.Items = new HZH_Controls.Controls.NavigationMenuItem[] { navigationMenuItem1, navigationMenuItem4, navigationMenuItem7, navigationMenuItem10, navigationMenuItem11, navigationMenuItem12 };
+            this.ucNavigationMenu1.Items = new HZH_Controls.Controls.NavigationMenuItem[] {
+        navigationMenuItem1,
+        navigationMenuItem4,
+        navigationMenuItem7,
+        navigationMenuItem10,
+        navigationMenuItem11,
+        navigationMenuItem12};
             this.ucNavigationMenu1.Location = new System.Drawing.Point(0, 35);
             this.ucNavigationMenu1.Name = "ucNavigationMenu1";
             this.ucNavigationMenu1.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
@@ -318,6 +334,7 @@
             this.uiTitlePanel3.ResumeLayout(false);
             this.uiTitlePanel2.ResumeLayout(false);
             this.ResumeLayout(false);
+
         }
 
         #endregion

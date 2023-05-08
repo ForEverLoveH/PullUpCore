@@ -28,13 +28,22 @@ namespace CameraADCoreModel.GameModel
                     return "";
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="state0"></param>
+        /// <returns></returns>
         public static string ResultState2Str(string state0)
         {
             int.TryParse(state0, out int state);
             return ResultState2Str(state);
 
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="state"></param>
+        /// <returns></returns>
         public static int ResultState2Int(string state)
         {
             switch (state)

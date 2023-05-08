@@ -358,5 +358,21 @@ namespace CamerADCore.GameSystem.GameWindow
             MainWindowSys.Instance.CloseSQLite();
             Environment.Exit(0);
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void GroupTreeView_MouseDown(object sender, MouseEventArgs e)
+        {
+            if(e.Button==MouseButtons.Left)
+            {
+                TreeNode treeNode = GroupTreeView.GetNodeAt(e.X, e.Y);
+                if(treeNode != null)
+                {
+                    GroupTreeView.SelectedNode = treeNode;
+                }
+            }
+        }
     }
 }

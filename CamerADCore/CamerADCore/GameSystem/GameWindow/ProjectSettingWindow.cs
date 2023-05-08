@@ -115,6 +115,15 @@ namespace CamerADCore.GameSystem.GameWindow
             {
                 contextMenuStrip1.Show(ProjectTreeView, e.Location);
             }
+
+            if (e.Button == MouseButtons.Left)
+            {
+                TreeNode curr = ProjectTreeView.GetNodeAt(e.X, e.Y);
+                if (curr != null)
+                {
+                    ProjectTreeView.SelectedNode = curr;
+                }
+            }
         }
 
         /// <summary>
@@ -192,8 +201,7 @@ namespace CamerADCore.GameSystem.GameWindow
             if(ProjectSettingWindowSys.Instance.ShowPersonImportDataWindow(txt_projectName.Text))
             {
                  UIMessageBox.ShowSuccess("名单导入成功！！");
-                 ProjectSettingWindowSys.Instance.UpDataProjectListView(ProjectTreeView, ref projects);
-                
+                 ProjectSettingWindowSys.Instance.UpDataProjectListView(ProjectTreeView, ref projects);  
             }
             else
             {
