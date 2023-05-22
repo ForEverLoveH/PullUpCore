@@ -8,6 +8,7 @@ using HZH_Controls.Forms;
 using System;
 using System.ComponentModel;
 using System.IO;
+using CamerADCore.GameSystem.AutoSize;
 
 namespace CamerADCore.GameSystem.GameWindow
 {
@@ -19,13 +20,17 @@ namespace CamerADCore.GameSystem.GameWindow
         }
          private  List<ProjectModel> projects = new List<ProjectModel>();
          private string projectID = string.Empty;
-         /// <summary>
-         /// 
-         /// </summary>
-         /// <param name="sender"></param>
-         /// <param name="e"></param>
+        AutoSizeFormClass asc = new AutoSizeFormClass();
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void ProjectSettingWindow_Load(object sender, System.EventArgs e)
         {
+            Control.CheckForIllegalCrossThreadCalls = false;
+             asc.controllInitializeSize(this);
+           
             ProjectSettingWindowSys.Instance.UpDataProjectListView(ProjectTreeView, ref projects);
         }
          /// <summary>
@@ -265,6 +270,9 @@ namespace CamerADCore.GameSystem.GameWindow
 
         }
 
-        
+        private void ProjectSettingWindow_SizeChanged(object sender, EventArgs e)
+        {
+            asc.controlAutoSize(this);
+        }
     }
 }

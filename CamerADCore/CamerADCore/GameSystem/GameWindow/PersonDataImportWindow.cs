@@ -98,6 +98,7 @@ namespace CamerADCore.GameSystem.GameWindow
                 if (s)
                 {
                     UIMessageBox.ShowSuccess("导入成功！！");
+                    DialogResult = DialogResult.OK;
                     
                 }
                 else
@@ -162,6 +163,7 @@ namespace CamerADCore.GameSystem.GameWindow
             {
                 PersonDataImportWindowSys.Instance.GetStudentDataFromServer(projectName, ps, localValues, ref proval,
                     ref proMax, timer1);
+                DialogResult = DialogResult.OK;
                 
             }
             else
@@ -172,6 +174,7 @@ namespace CamerADCore.GameSystem.GameWindow
 
         private void PersonDataImportWindow_Load(object sender, EventArgs e)
         {
+            Control.CheckForIllegalCrossThreadCalls = false;
             PersonDataImportWindowSys.Instance.LoadingInitData(ref localInfos, ref localValues);
         }
     }

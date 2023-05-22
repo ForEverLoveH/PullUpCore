@@ -47,7 +47,6 @@ namespace CamerADCore.GameSystem.GameWindow
         /// <param name="e"></param>
         private void FrmModifyScoreWindow_Load(object sender, EventArgs e)
         {
-             
             ProjectNameTxt.Text = projectName;
             studentNameTxt.Text = stuName;
             GroupNameTxt.Text = groupName;

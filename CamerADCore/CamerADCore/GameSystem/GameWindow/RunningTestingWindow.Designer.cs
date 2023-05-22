@@ -411,7 +411,17 @@ namespace CamerADCore.GameSystem.GameWindow
             // 
             this.equipmentCountCbx.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.equipmentCountCbx.FormattingEnabled = true;
-            this.equipmentCountCbx.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10" });
+            this.equipmentCountCbx.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
             this.equipmentCountCbx.Location = new System.Drawing.Point(81, 71);
             this.equipmentCountCbx.Name = "equipmentCountCbx";
             this.equipmentCountCbx.Size = new System.Drawing.Size(201, 29);
@@ -513,7 +523,13 @@ namespace CamerADCore.GameSystem.GameWindow
             this.CurrentGroupStudentData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.CurrentGroupStudentData.ColumnHeadersHeight = 32;
             this.CurrentGroupStudentData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
-            this.CurrentGroupStudentData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { this.Column1, this.Column2, this.Column3, this.Column4, this.Column5, this.Column6 });
+            this.CurrentGroupStudentData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -895,7 +911,8 @@ namespace CamerADCore.GameSystem.GameWindow
             // statusStrip1
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { this.serialConnectStripStatusLabel1 });
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.serialConnectStripStatusLabel1});
             this.statusStrip1.Location = new System.Drawing.Point(0, 915);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1660, 27);
@@ -917,7 +934,12 @@ namespace CamerADCore.GameSystem.GameWindow
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { this.修正成绩ToolStripMenuItem, this.缺考ToolStripMenuItem, this.弃权ToolStripMenuItem, this.中退ToolStripMenuItem, this.犯规ToolStripMenuItem });
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.修正成绩ToolStripMenuItem,
+            this.缺考ToolStripMenuItem,
+            this.弃权ToolStripMenuItem,
+            this.中退ToolStripMenuItem,
+            this.犯规ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(125, 114);
             // 
@@ -975,6 +997,7 @@ namespace CamerADCore.GameSystem.GameWindow
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RunningTestingWindow_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.RunningTestingWindow_FormClosed);
             this.Load += new System.EventHandler(this.RunningTestingWindow_Load);
+            this.SizeChanged += new System.EventHandler(this.RunningTestingWindow_SizeChanged);
             this.uiTitlePanel1.ResumeLayout(false);
             this.uiGroupBox5.ResumeLayout(false);
             this.uiGroupBox4.ResumeLayout(false);
@@ -999,6 +1022,7 @@ namespace CamerADCore.GameSystem.GameWindow
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         private Sunny.UI.UIButton uiButton1;

@@ -60,6 +60,7 @@
             // 
             // uiTitlePanel1
             // 
+            this.uiTitlePanel1.AutoSize = true;
             this.uiTitlePanel1.Controls.Add(this.ucProcessLine1);
             this.uiTitlePanel1.Controls.Add(this.uiTitlePanel3);
             this.uiTitlePanel1.Controls.Add(this.uiTitlePanel2);
@@ -71,11 +72,12 @@
             this.uiTitlePanel1.Name = "uiTitlePanel1";
             this.uiTitlePanel1.Padding = new System.Windows.Forms.Padding(0, 35, 0, 0);
             this.uiTitlePanel1.ShowText = false;
-            this.uiTitlePanel1.Size = new System.Drawing.Size(1499, 814);
+            this.uiTitlePanel1.Size = new System.Drawing.Size(1499, 798);
             this.uiTitlePanel1.TabIndex = 0;
             this.uiTitlePanel1.Text = "德育龙测试系统";
             this.uiTitlePanel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.uiTitlePanel1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            //this.uiTitlePanel1.Load += new System.EventHandler(this.uiTitlePanel1_Load);
             // 
             // ucProcessLine1
             // 
@@ -83,7 +85,7 @@
             this.ucProcessLine1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.ucProcessLine1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.ucProcessLine1.ForeColor = System.Drawing.Color.Black;
-            this.ucProcessLine1.Location = new System.Drawing.Point(0, 800);
+            this.ucProcessLine1.Location = new System.Drawing.Point(0, 784);
             this.ucProcessLine1.Margin = new System.Windows.Forms.Padding(2);
             this.ucProcessLine1.MaxValue = 100;
             this.ucProcessLine1.Name = "ucProcessLine1";
@@ -330,10 +332,12 @@
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainWindow_FormClosing);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainWindow_FormClosed);
             this.Load += new System.EventHandler(this.MainWindow_Load);
+            this.SizeChanged += new System.EventHandler(this.MainWindow_SizeChanged);
             this.uiTitlePanel1.ResumeLayout(false);
             this.uiTitlePanel3.ResumeLayout(false);
             this.uiTitlePanel2.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

@@ -19,6 +19,7 @@ using LogHlper;
 using SpeechLib;
 using Sunny.UI;
 using Sunny.UI.Win32;
+using CamerADCore.GameSystem.AutoSize;
 
 namespace CamerADCore.GameSystem.GameWindow
 {
@@ -59,7 +60,8 @@ namespace CamerADCore.GameSystem.GameWindow
         private List<UserControl1> _userControl1s = null;
         private List<RaceStudentData> RaceStudentDataLists = new List<RaceStudentData>();
         private NFC_Helper USBWatcher = new NFC_Helper();
-        
+        AutoSizeFormClass asc = new AutoSizeFormClass();
+
         private void RunningTestingWindow_Load(object sender, System.EventArgs e)
         {
             Control.CheckForIllegalCrossThreadCalls = false;
@@ -71,6 +73,7 @@ namespace CamerADCore.GameSystem.GameWindow
             USBWatcher.AddUSBEventWatcher(USBEventHandler, USBEventHandler, new TimeSpan(0, 0, 1)); 
             sw.Stop();
             Console.WriteLine($"-------{sw.ElapsedMilliseconds}");
+            asc.controllInitializeSize(this);
 
         }
         /// <summary>
@@ -1091,8 +1094,12 @@ namespace CamerADCore.GameSystem.GameWindow
              if (SerialReader != null)
                  SerialReader.CloseCom();
          }
-         #endregion
-    
+        #endregion
+
+        private void RunningTestingWindow_SizeChanged(object sender, EventArgs e)
+        {
+            asc.controlAutoSize(this);
+        }
     }
 
         

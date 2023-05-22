@@ -100,6 +100,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GameSystem\AutoSize\AutoSizeFormClass.cs" />
     <Compile Include="GameSystem\GameHelper\CPUHelper.cs" />
     <Compile Include="GameSystem\GameHelper\NFC_Helper.cs" />
     <Compile Include="GameSystem\GameHelper\SerialReader.cs" />

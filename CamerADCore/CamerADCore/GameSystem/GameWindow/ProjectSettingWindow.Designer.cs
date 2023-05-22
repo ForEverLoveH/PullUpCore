@@ -107,7 +107,9 @@ namespace CamerADCore.GameSystem.GameWindow
             // 
             // ucDataGridView1
             // 
-            this.ucDataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+            this.ucDataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.ucDataGridView1.BackColor = System.Drawing.Color.White;
             this.ucDataGridView1.Columns = null;
             this.ucDataGridView1.DataSource = null;
@@ -234,7 +236,9 @@ namespace CamerADCore.GameSystem.GameWindow
             this.txt_Type.DataSource = null;
             this.txt_Type.FillColor = System.Drawing.Color.White;
             this.txt_Type.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txt_Type.Items.AddRange(new object[] { "仰卧起坐", "引体向上" });
+            this.txt_Type.Items.AddRange(new object[] {
+            "仰卧起坐",
+            "引体向上"});
             this.txt_Type.Location = new System.Drawing.Point(120, 129);
             this.txt_Type.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_Type.MinimumSize = new System.Drawing.Size(63, 0);
@@ -251,7 +255,10 @@ namespace CamerADCore.GameSystem.GameWindow
             this.txt_BestScoreMode.DataSource = null;
             this.txt_BestScoreMode.FillColor = System.Drawing.Color.White;
             this.txt_BestScoreMode.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txt_BestScoreMode.Items.AddRange(new object[] { "末位删除", "非零进一", "四舍五入" });
+            this.txt_BestScoreMode.Items.AddRange(new object[] {
+            "末位删除",
+            "非零进一",
+            "四舍五入"});
             this.txt_BestScoreMode.Location = new System.Drawing.Point(384, 129);
             this.txt_BestScoreMode.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_BestScoreMode.MinimumSize = new System.Drawing.Size(63, 0);
@@ -268,7 +275,12 @@ namespace CamerADCore.GameSystem.GameWindow
             this.txt_FloatType.DataSource = null;
             this.txt_FloatType.FillColor = System.Drawing.Color.White;
             this.txt_FloatType.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txt_FloatType.Items.AddRange(new object[] { "小数点后0位", "小数点后1位", "小数点后2位", "小数点后3位", "小数点后4位" });
+            this.txt_FloatType.Items.AddRange(new object[] {
+            "小数点后0位",
+            "小数点后1位",
+            "小数点后2位",
+            "小数点后3位",
+            "小数点后4位"});
             this.txt_FloatType.Location = new System.Drawing.Point(614, 129);
             this.txt_FloatType.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_FloatType.MinimumSize = new System.Drawing.Size(63, 0);
@@ -318,7 +330,9 @@ namespace CamerADCore.GameSystem.GameWindow
             this.txt_TestMethod.DataSource = null;
             this.txt_TestMethod.FillColor = System.Drawing.Color.White;
             this.txt_TestMethod.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txt_TestMethod.Items.AddRange(new object[] { "自动下一位", "自动下一轮" });
+            this.txt_TestMethod.Items.AddRange(new object[] {
+            "自动下一位",
+            "自动下一轮"});
             this.txt_TestMethod.Location = new System.Drawing.Point(614, 80);
             this.txt_TestMethod.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_TestMethod.MinimumSize = new System.Drawing.Size(63, 0);
@@ -346,7 +360,17 @@ namespace CamerADCore.GameSystem.GameWindow
             this.txt_RoundCount.DataSource = null;
             this.txt_RoundCount.FillColor = System.Drawing.Color.White;
             this.txt_RoundCount.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.txt_RoundCount.Items.AddRange(new object[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9" });
+            this.txt_RoundCount.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9"});
             this.txt_RoundCount.Location = new System.Drawing.Point(384, 80);
             this.txt_RoundCount.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_RoundCount.MinimumSize = new System.Drawing.Size(63, 0);
@@ -465,7 +489,9 @@ namespace CamerADCore.GameSystem.GameWindow
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { this.插入项目ToolStripMenuItem, this.删除项目ToolStripMenuItem });
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.插入项目ToolStripMenuItem,
+            this.删除项目ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(125, 48);
             // 
@@ -494,6 +520,7 @@ namespace CamerADCore.GameSystem.GameWindow
             this.Name = "ProjectSettingWindow";
             this.Text = "项目设置";
             this.Load += new System.EventHandler(this.ProjectSettingWindow_Load);
+            this.SizeChanged += new System.EventHandler(this.ProjectSettingWindow_SizeChanged);
             this.uiTitlePanel1.ResumeLayout(false);
             this.uiTitlePanel5.ResumeLayout(false);
             this.uiTitlePanel4.ResumeLayout(false);
@@ -501,6 +528,7 @@ namespace CamerADCore.GameSystem.GameWindow
             this.uiTitlePanel2.ResumeLayout(false);
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
+
         }
 
         #endregion

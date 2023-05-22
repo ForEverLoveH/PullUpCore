@@ -120,6 +120,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "CreateProjectWindow";
             this.Text = "创建新项目";
+            this.Load += new System.EventHandler(this.CreateProjectWindow_Load);
             this.uiTitlePanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

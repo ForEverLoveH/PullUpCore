@@ -53,5 +53,10 @@ namespace CamerADCore.GameSystem.GameWindow
                 BeSure();
             }
         }
+
+        private void CreateProjectWindow_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -27,6 +27,7 @@ namespace CamerADCore.GameSystem.GameWindow
         public Dictionary<string, string> localValues = new Dictionary<string, string>();
         private void EquipMentSettingWindow_Load(object sender, EventArgs e)
         {
+             
             EquipMentSettingWindowSys.Instance.LoadingInitData(ref localInfos,ref localValues  , uiComboBox2, uiCombox3, uiComboBox1);
         }
         /// <summary>

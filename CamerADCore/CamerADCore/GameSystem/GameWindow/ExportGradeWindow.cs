@@ -18,7 +18,7 @@ namespace CamerADCore.GameSystem.GameWindow
 
         private void ExportGradeWindow_Load(object sender, System.EventArgs e)
         {
-            uiLabel1.Text = $"项目:{_ProjectName},当前选择组别:{_GroupName}";
+             uiLabel1.Text = $"项目:{_ProjectName},当前选择组别:{_GroupName}";
         }
 
         private void uiButton1_Click(object sender, System.EventArgs e)

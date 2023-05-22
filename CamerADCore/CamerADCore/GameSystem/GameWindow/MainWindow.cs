@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Forms.VisualStyles;
 using CameraADCoreModel.GameModel;
+using CamerADCore.GameSystem.AutoSize;
 using CamerADCore.GameSystem.GameWindowSys;
 using HZH_Controls;
 using HZH_Controls.Forms;
@@ -39,6 +40,7 @@ namespace CamerADCore.GameSystem.GameWindow
         private void MainWindow_Load(object sender, EventArgs e)
         {
             Control. CheckForIllegalCrossThreadCalls= false;
+            asc.controllInitializeSize(this);
             MainWindowSys.Instance.UpdataGroupTreeView(GroupTreeView,ref ProjectsModels);
         }
         /// <summary>
@@ -257,58 +259,66 @@ namespace CamerADCore.GameSystem.GameWindow
         /// </summary>
         private void UpLoadeScore()
         {
-            string fullPath = GroupTreeView.SelectedNode.FullPath;
-            string[] fsp = fullPath.Split('\\');
-            string projectName = string.Empty;
-            if (fsp.Length > 0)
+            if (GroupTreeView.SelectedNode != null)
             {
-                projectName = fsp[0];
-            }
-            if (string.IsNullOrEmpty(projectName))
-            {
-                UIMessageBox.ShowError("请选择你需要上传的项目数据");
-                return;
-            }
-            Thread thread = new Thread(new ParameterizedThreadStart((o) =>
-            {
-                try
+                string fullPath = GroupTreeView.SelectedNode.FullPath;
+                string[] fsp = fullPath.Split('\\');
+                string projectName = string.Empty;
+                if (fsp.Length > 0)
                 {
-                    string message = MainWindowSys.Instance.UpLoadingCurrentScore(fsp, ref proMax, ref proVal, ucProcessLine1, timer1);
-                    message = message.Trim();
-                    if (String.IsNullOrEmpty(message))
+                    projectName = fsp[0];
+                }
+                if (string.IsNullOrEmpty(projectName))
+                {
+                    UIMessageBox.ShowError("请选择你需要上传的项目数据");
+                    return;
+                }
+                Thread thread = new Thread(new ParameterizedThreadStart((o) =>
+                {
+                    try
                     {
-                        HZH_Controls.ControlHelper.ThreadInvokerControl(this, () =>
+                        string message = MainWindowSys.Instance.UpLoadingCurrentScore(fsp, ref proMax, ref proVal, ucProcessLine1, timer1);
+                        message = message.Trim();
+                        if (String.IsNullOrEmpty(message))
                         {
-                            FrmTips.ShowTipsInfo(this, "上传结束");
-                        });
-                    }
-                    else
-                    {
-                        MessageBox.Show(message);
-                    }
+                            HZH_Controls.ControlHelper.ThreadInvokerControl(this, () =>
+                            {
+                                FrmTips.ShowTipsInfo(this, "上传结束");
+                            });
+                        }
+                        else
+                        {
+                            MessageBox.Show(message);
+                        }
 
-                    if (!string.IsNullOrEmpty(projectName))
+                        if (!string.IsNullOrEmpty(projectName))
+                        {
+                            HZH_Controls.ControlHelper.ThreadInvokerControl(this, () =>
+                            {
+                                MainWindowSys.Instance.UpDataStudentDataView(treeGroupText, projectName, ref projectId, StudentDataListview);
+                            });
+                        };
+                    }
+                    catch (Exception ex)
+                    {
+                        LoggerHelper.Debug(ex);
+                    }
+                    finally
                     {
                         HZH_Controls.ControlHelper.ThreadInvokerControl(this, () =>
                         {
                             MainWindowSys.Instance.UpDataStudentDataView(treeGroupText, projectName, ref projectId, StudentDataListview);
                         });
-                    };
-                }
-                catch (Exception ex)
-                {
-                    LoggerHelper.Debug(ex);
-                }
-                finally
-                {
-                    HZH_Controls.ControlHelper.ThreadInvokerControl(this, () =>
-                    {
-                        MainWindowSys.Instance.UpDataStudentDataView(treeGroupText, projectName, ref projectId, StudentDataListview);
-                    });
-                }
-            }));
-            thread.IsBackground = true;
-            thread.Start();    
+                    }
+                }));
+                thread.IsBackground = true;
+                thread.Start();
+            }
+            else
+            {
+                UIMessageBox.ShowWarning("请先选择项目数据！！");
+                return;
+            }
         }
 
         /// <summary>
@@ -373,6 +383,13 @@ namespace CamerADCore.GameSystem.GameWindow
                     GroupTreeView.SelectedNode = treeNode;
                 }
             }
+        }
+        AutoSizeFormClass asc = new AutoSizeFormClass();
+        
+
+        private void MainWindow_SizeChanged(object sender, EventArgs e)
+        {
+            asc.controlAutoSize(this);
         }
     }
 }
