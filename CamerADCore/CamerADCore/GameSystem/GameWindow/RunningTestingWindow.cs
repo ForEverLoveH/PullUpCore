@@ -65,6 +65,7 @@ namespace CamerADCore.GameSystem.GameWindow
         private void RunningTestingWindow_Load(object sender, System.EventArgs e)
         {
             Control.CheckForIllegalCrossThreadCalls = false;
+            this.Text = $"德育龙{ProjectName}测试系统";
             LoadingInitData();
             RunningTestingWindowSys.Instance.UpdataGroupListView(ProjectID, GroupName, 1, CurrentGroupStudentData, label13);
             Stopwatch sw = new Stopwatch();
@@ -544,7 +545,7 @@ namespace CamerADCore.GameSystem.GameWindow
                 if (CurrentRoundCount>0)
                 {
                     RunningTestingWindowSys.Instance.UpdataGroupListView(ProjectID,GroupName,CurrentRoundCount,CurrentGroupStudentData,uiLabel3);
-                    RunningTestingWindowSys.Instance.ClearMatchUser(_userControl1s,ref  RaceStudentDataLists); 
+                    RunningTestingWindowSys.Instance.ClearMatchUser(ref _userControl1s,ref  RaceStudentDataLists); 
                 }
             }
 
@@ -647,8 +648,8 @@ namespace CamerADCore.GameSystem.GameWindow
         /// <param name="e"></param>
         private void btnAutoMatch_Click(object sender, EventArgs e)
         {
-             RunningTestingWindowSys.Instance.ClearMatchUser(_userControl1s,ref  RaceStudentDataLists);
-             RunningTestingWindowSys.Instance.AutoMatchStudentData(ProjectID, GroupName, CurrentGroupStudentData,ref RaceStudentDataLists,equipmentCount,CurrentRoundCount,_userControl1s,ref autoMatchFlag,SerialReader);
+             RunningTestingWindowSys.Instance.ClearMatchUser(ref _userControl1s,ref  RaceStudentDataLists);
+             RunningTestingWindowSys.Instance.AutoMatchStudentData(ProjectID, GroupName, CurrentGroupStudentData,ref RaceStudentDataLists,equipmentCount,CurrentRoundCount,ref _userControl1s,ref autoMatchFlag,SerialReader);
         }
         /// <summary>
         /// 选择匹配
@@ -657,8 +658,8 @@ namespace CamerADCore.GameSystem.GameWindow
         /// <param name="e"></param>
         private void btnSelectMatch_Click(object sender, EventArgs e)
         {
-            RunningTestingWindowSys.Instance.ClearMatchUser(_userControl1s,ref  RaceStudentDataLists);
-            RunningTestingWindowSys.Instance.SelectMatchStudentData(CurrentGroupStudentData, ref RaceStudentDataLists, CurrentRoundCount, _userControl1s,ref autoMatchFlag,SerialReader  );
+            RunningTestingWindowSys.Instance.ClearMatchUser(ref _userControl1s,ref  RaceStudentDataLists);
+            RunningTestingWindowSys.Instance.SelectMatchStudentData(CurrentGroupStudentData, ref RaceStudentDataLists, CurrentRoundCount, ref _userControl1s,ref autoMatchFlag,SerialReader  );
         } 
         /// <summary>
         /// 清空匹配
@@ -668,7 +669,7 @@ namespace CamerADCore.GameSystem.GameWindow
         /// <exception cref="NotImplementedException"></exception>
         private void btnClearMatch_Click(object sender, EventArgs e)
         {
-            RunningTestingWindowSys.Instance.ClearMatchUser(_userControl1s,ref RaceStudentDataLists);
+            RunningTestingWindowSys.Instance.ClearMatchUser(ref _userControl1s,ref RaceStudentDataLists);
         }
         /// <summary>
         /// 全部暂停

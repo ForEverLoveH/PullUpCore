@@ -195,9 +195,9 @@ namespace CamerADCore.GameSystem.GameWindowSys
         /// </summary>
         /// <param name="fusp"></param>
         /// <param name="dic"></param>
-        public void ShowRunningTestingWindow(string[] fusp, Dictionary<string, string> dic)
+        public bool ShowRunningTestingWindow(string[] fusp, Dictionary<string, string> dic)
         {
-            RunningTestingWindowSys.Instance.ShowRunningTestingWindow(fusp, dic,SQLiteHelper);
+           return  RunningTestingWindowSys.Instance.ShowRunningTestingWindow(fusp, dic,SQLiteHelper);
         }
         /// <summary>
         /// 

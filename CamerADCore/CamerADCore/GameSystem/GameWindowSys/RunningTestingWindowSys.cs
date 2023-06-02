@@ -36,7 +36,7 @@ namespace CamerADCore.GameSystem.GameWindowSys
         /// <param name="fusp"></param>
         /// <param name="dic"></param>
         /// <param name="sqLiteHelper"></param>
-        public void ShowRunningTestingWindow(string[] fusp, Dictionary<string, string> dic, SQLiteHelper sqLiteHelper)
+        public bool ShowRunningTestingWindow(string[] fusp, Dictionary<string, string> dic, SQLiteHelper sqLiteHelper)
         {
             SQLiteHelper = sqLiteHelper;
             RunningTestingWindow = new RunningTestingWindow();
@@ -53,7 +53,11 @@ namespace CamerADCore.GameSystem.GameWindowSys
             RunningTestingWindow.TestMethod = Convert.ToInt32(dic["TestMethod"]);
             RunningTestingWindow.FloatType = Convert.ToInt32(dic["FloatType"]);
             RunningTestingWindow.formTitle = string.Format("考试项目:{0}", fusp[0]);
-            RunningTestingWindow.ShowDialog();
+            if (RunningTestingWindow.ShowDialog() == DialogResult.OK)
+            {
+                return true;
+            }
+           else { return false; }
         }
 
         /// <summary>
@@ -377,7 +381,7 @@ namespace CamerADCore.GameSystem.GameWindowSys
         /// </summary>
         /// <param name="userControl1S"></param>
         /// <param name="raceStudentDataLists"></param>
-        public void ClearMatchUser(List<UserControl1> userControl1S, ref List<RaceStudentData> raceStudentDataLists)
+        public void ClearMatchUser(ref List<UserControl1> userControl1S, ref List<RaceStudentData> raceStudentDataLists)
         {
             try
             {
@@ -412,7 +416,7 @@ namespace CamerADCore.GameSystem.GameWindowSys
         /// <param name="serialReader"></param>
         public void AutoMatchStudentData(string projectId, string groupName, UIDataGridView currentGroupStudentData,
             ref List<RaceStudentData> raceStudentDatas, int equipMentCount, int currentRoundCount,
-            List<UserControl1> userControl1s, ref bool autoMatchFlag, SerialReader serialReader)
+           ref List<UserControl1> userControl1s, ref bool autoMatchFlag, SerialReader serialReader)
         {
             try
             {
@@ -505,7 +509,7 @@ namespace CamerADCore.GameSystem.GameWindowSys
                     }
                 }
 
-                AutoMatchStudentUserControll(raceStudentDatas, userControl1s, ref autoMatchFlag, serialReader);
+                AutoMatchStudentUserControll(raceStudentDatas,ref  userControl1s, ref autoMatchFlag, serialReader);
             }
             catch (Exception e)
             {
@@ -522,7 +526,7 @@ namespace CamerADCore.GameSystem.GameWindowSys
         /// <param name="autoMatchFlag"></param>
         /// <param name="serialReader"></param>
         private void AutoMatchStudentUserControll(List<RaceStudentData> raceStudentDatas,
-            List<UserControl1> userControl1S, ref bool autoMatchFlag, SerialReader serialReader)
+           ref List<UserControl1> userControl1S, ref bool autoMatchFlag, SerialReader serialReader)
         {
             try
             {
@@ -585,7 +589,7 @@ namespace CamerADCore.GameSystem.GameWindowSys
         /// <param name="currentRoundCount"></param>
         /// <param name="userControl1S"></param>
         public void SelectMatchStudentData(UIDataGridView currentGroupStudentData,
-            ref List<RaceStudentData> raceStudentDataLists, int currentRoundCount, List<UserControl1> userControl1S,
+            ref List<RaceStudentData> raceStudentDataLists, int currentRoundCount, ref List<UserControl1> userControl1S,
             ref bool auto, SerialReader serialReader)
         {
             try
@@ -620,11 +624,11 @@ namespace CamerADCore.GameSystem.GameWindowSys
 
                 if (flag)
                 {
-                    AutoMatchStudentUserControll(raceStudentDataLists, userControl1S, ref auto, serialReader);
+                    AutoMatchStudentUserControll(raceStudentDataLists, ref userControl1S, ref auto, serialReader);
                 }
                 else
                 {
-                    ClearMatchUser(userControl1S, ref raceStudentDataLists);
+                    ClearMatchUser(ref userControl1S, ref raceStudentDataLists);
                 }
             }
             catch (Exception exception)
