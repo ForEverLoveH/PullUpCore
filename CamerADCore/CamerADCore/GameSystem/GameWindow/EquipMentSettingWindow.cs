@@ -14,6 +14,7 @@ using HZH_Controls.Forms;
 using LogHlper;
 using Newtonsoft.Json;
 using Sunny.UI;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace CamerADCore.GameSystem.GameWindow
 {
@@ -28,7 +29,7 @@ namespace CamerADCore.GameSystem.GameWindow
         private void EquipMentSettingWindow_Load(object sender, EventArgs e)
         {
              
-            EquipMentSettingWindowSys.Instance.LoadingInitData(ref localInfos,ref localValues  , uiComboBox2, uiCombox3, uiComboBox1);
+            EquipMentSettingWindowSys.Instance.LoadingInitData(ref localInfos,ref localValues  , ComboBox2, combox3, ComboBox1);
         }
         /// <summary>
         /// 
@@ -36,16 +37,58 @@ namespace CamerADCore.GameSystem.GameWindow
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void uiButton1_Click(object sender, EventArgs e)
-        { 
-            var s=EquipMentSettingWindowSys.Instance.GetExamNumber(uiCombox3, uiComboBox1, uiComboBox2, localValues);
-            if (s)
+        {
+           combox3.Items.Clear();
+            string url = ComboBox2.Text;
+
+            if (string.IsNullOrEmpty(url))
             {
-                UIMessageBox.ShowSuccess("获取成功！！");
-            }
-            else
-            {
-                UIMessageBox.ShowError("获取失败！！");
+                FrmTips.ShowTipsError(this, "网址为空!");
                 return;
+            }
+            url += RequestUrl.GetExamListUrl;
+            RequestParameter RequestParameter = new RequestParameter();
+            RequestParameter.AdminUserName = localValues["AdminUserName"];
+            RequestParameter.TestManUserName = localValues["TestManUserName"];
+            RequestParameter.TestManPassword = localValues["TestManPassword"];
+
+            //序列化
+            string JsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(RequestParameter);
+
+            // string url = localValues["Platform"] + RequestUrl.GetExamListUrl;
+
+            var formDatas = new List<FormItemModel>();
+            //添加其他字段
+            formDatas.Add(new FormItemModel()
+            {
+                Key = "data",
+                Value = JsonStr
+            });
+            var httpUpload = new HttpUpload();
+            string result = HttpUpload.PostForm(url, formDatas);
+            GetExamList upload_Result = JsonConvert.DeserializeObject<GetExamList>(result);
+
+            if (upload_Result == null || upload_Result.Results == null || upload_Result.Results.Count == 0)
+            {
+                string error = string.Empty;
+                try
+                {
+                    error = upload_Result.Error;
+
+                }
+                catch (Exception)
+                {
+
+                    error = string.Empty;
+                }
+                FrmTips.ShowTipsError(this, $"提交错误,错误码:[{error}]");
+                return;
+            }
+
+            foreach (var item in upload_Result.Results)
+            {
+                string str = $"{item.title}_{item.exam_id}";
+               combox3.Items.Add(str);
             }
         }
         /// <summary>
@@ -55,16 +98,67 @@ namespace CamerADCore.GameSystem.GameWindow
         /// <param name="e"></param>
         private void uiButton2_Click(object sender, EventArgs e)
         {
-           bool s  = EquipMentSettingWindowSys.Instance.LoadingEquipMentCodeData(uiComboBox2,uiCombox3,uiComboBox1,localValues);
-           if (s)
-           {
-               UIMessageBox.ShowSuccess("获取成功！！");
-           }
-           else
-           {
-               UIMessageBox.ShowError("获取失败！！");
-               return;
-           }
+            ComboBox1.Items.Clear();
+
+            string examId = combox3.Text;
+            if (string.IsNullOrEmpty(examId))
+            {
+                FrmTips.ShowTipsError(this, "考试id为空!");
+                return;
+            }
+            if (examId.IndexOf('_') != -1)
+            {
+                examId = examId.Substring(examId.IndexOf('_') + 1);
+            }
+            string url = ComboBox2.Text;
+            if (string.IsNullOrEmpty(url))
+            {
+                FrmTips.ShowTipsError(this, "网址为空!");
+                return;
+            }
+            url += RequestUrl.GetMachineCodeListUrl;
+
+            RequestParameter RequestParameter = new RequestParameter();
+            RequestParameter.AdminUserName = localValues["AdminUserName"];
+            RequestParameter.TestManUserName = localValues["TestManUserName"];
+            RequestParameter.TestManPassword = localValues["TestManPassword"];
+            RequestParameter.ExamId = examId;
+            //序列化
+            string JsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(RequestParameter);
+
+            var formDatas = new List<FormItemModel>();
+            //添加其他字段
+            formDatas.Add(new FormItemModel()
+            {
+                Key = "data",
+                Value = JsonStr
+            });
+            var httpUpload = new HttpUpload();
+            string result = HttpUpload.PostForm(url, formDatas);
+            GetMachineCodeList upload_Result = JsonConvert.DeserializeObject<GetMachineCodeList>(result);
+            if (upload_Result == null || upload_Result.Results == null || upload_Result.Results.Count == 0)
+            {
+                string error = string.Empty;
+                try
+                {
+                    error = upload_Result.Error;
+
+                }
+                catch (Exception)
+                {
+
+                    error = string.Empty;
+                }
+                FrmTips.ShowTipsError(this, $"提交错误,错误码:[{error}]");
+                return;
+            }
+
+            foreach (var item in upload_Result.Results)
+            {
+                string str = $"{item.title}_{item.MachineCode}";
+                ComboBox1.Items.Add(str);
+
+            }
         }
         /// <summary>
         /// 
@@ -73,9 +167,9 @@ namespace CamerADCore.GameSystem.GameWindow
         /// <param name="e"></param>
         private void uiButton3_Click(object sender, EventArgs e)
         {
-            string Platform =uiComboBox2.Text;
-            string ExamId = uiCombox3.Text;
-            string MachineCode = uiComboBox1.Text;
+            string Platform =ComboBox2.Text;
+            string ExamId = combox3.Text;
+            string MachineCode = ComboBox1.Text;
             if (!string.IsNullOrEmpty(Platform) && !string.IsNullOrEmpty(ExamId) && !string.IsNullOrEmpty(MachineCode))
             {
                 bool  S=   EquipMentSettingWindowSys.Instance.SavePlatformSetting(Platform, ExamId, MachineCode);

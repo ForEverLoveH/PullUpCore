@@ -31,7 +31,7 @@ namespace CamerADCore.GameSystem.GameWindow
         private string projectId = string.Empty;
         private string projectName = string.Empty;
         private string treeGroupText = string.Empty;
-        
+        private AutoSizeFormClass AutoSizeFormClass = null;
         /// <summary>
         /// 
         /// </summary>
@@ -39,8 +39,9 @@ namespace CamerADCore.GameSystem.GameWindow
         /// <param name="e"></param>
         private void MainWindow_Load(object sender, EventArgs e)
         {
-            Control. CheckForIllegalCrossThreadCalls= false;
-            asc.controllInitializeSize(this);
+             Control. CheckForIllegalCrossThreadCalls= false;
+            AutoSizeFormClass = new AutoSizeFormClass(this);
+            
             MainWindowSys.Instance.UpdataGroupTreeView(GroupTreeView,ref ProjectsModels);
         }
         /// <summary>
@@ -384,12 +385,10 @@ namespace CamerADCore.GameSystem.GameWindow
                 }
             }
         }
-        AutoSizeFormClass asc = new AutoSizeFormClass();
-        
 
         private void MainWindow_SizeChanged(object sender, EventArgs e)
         {
-            asc.controlAutoSize(this);
+            //AutoSizeFormClass.FormSizeChanged();
         }
     }
 }

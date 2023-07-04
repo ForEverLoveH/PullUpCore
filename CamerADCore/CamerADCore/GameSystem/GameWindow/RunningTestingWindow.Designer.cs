@@ -32,11 +32,11 @@ namespace CamerADCore.GameSystem.GameWindow
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RunningTestingWindow));
             this.uiTitlePanel1 = new Sunny.UI.UITitlePanel();
             this.uiGroupBox5 = new Sunny.UI.UIGroupBox();
@@ -107,6 +107,7 @@ namespace CamerADCore.GameSystem.GameWindow
             this.中退ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.犯规ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.成绩重测ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uiTitlePanel1.SuspendLayout();
             this.uiGroupBox5.SuspendLayout();
             this.uiGroupBox4.SuspendLayout();
@@ -128,6 +129,7 @@ namespace CamerADCore.GameSystem.GameWindow
             // 
             // uiTitlePanel1
             // 
+            this.uiTitlePanel1.AutoSize = true;
             this.uiTitlePanel1.Controls.Add(this.uiGroupBox5);
             this.uiTitlePanel1.Controls.Add(this.tsetLabel);
             this.uiTitlePanel1.Controls.Add(this.uiGroupBox1);
@@ -141,7 +143,7 @@ namespace CamerADCore.GameSystem.GameWindow
             this.uiTitlePanel1.Name = "uiTitlePanel1";
             this.uiTitlePanel1.Padding = new System.Windows.Forms.Padding(0, 35, 0, 0);
             this.uiTitlePanel1.ShowText = false;
-            this.uiTitlePanel1.Size = new System.Drawing.Size(1670, 899);
+            this.uiTitlePanel1.Size = new System.Drawing.Size(4090, 899);
             this.uiTitlePanel1.TabIndex = 0;
             this.uiTitlePanel1.Text = "德育龙测试系统";
             this.uiTitlePanel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -149,6 +151,7 @@ namespace CamerADCore.GameSystem.GameWindow
             // 
             // uiGroupBox5
             // 
+            this.uiGroupBox5.AutoSize = true;
             this.uiGroupBox5.Controls.Add(this.uiGroupBox4);
             this.uiGroupBox5.Controls.Add(this.uiGroupBox3);
             this.uiGroupBox5.Controls.Add(this.uiGroupBox2);
@@ -158,7 +161,7 @@ namespace CamerADCore.GameSystem.GameWindow
             this.uiGroupBox5.MinimumSize = new System.Drawing.Size(1, 1);
             this.uiGroupBox5.Name = "uiGroupBox5";
             this.uiGroupBox5.Padding = new System.Windows.Forms.Padding(0, 32, 0, 0);
-            this.uiGroupBox5.Size = new System.Drawing.Size(553, 172);
+            this.uiGroupBox5.Size = new System.Drawing.Size(553, 177);
             this.uiGroupBox5.TabIndex = 14;
             this.uiGroupBox5.Text = "控制器";
             this.uiGroupBox5.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -354,6 +357,7 @@ namespace CamerADCore.GameSystem.GameWindow
             // 
             // uiGroupBox1
             // 
+            this.uiGroupBox1.AutoSize = true;
             this.uiGroupBox1.Controls.Add(this.button3);
             this.uiGroupBox1.Controls.Add(this.button12);
             this.uiGroupBox1.Controls.Add(this.button13);
@@ -457,6 +461,7 @@ namespace CamerADCore.GameSystem.GameWindow
             // 
             // uiTitlePanel3
             // 
+            this.uiTitlePanel3.AutoSize = true;
             this.uiTitlePanel3.Controls.Add(this.uiButton1);
             this.uiTitlePanel3.Controls.Add(this.uiTitlePanel4);
             this.uiTitlePanel3.Controls.Add(this.RoundCountCombox);
@@ -470,7 +475,7 @@ namespace CamerADCore.GameSystem.GameWindow
             this.uiTitlePanel3.Name = "uiTitlePanel3";
             this.uiTitlePanel3.Padding = new System.Windows.Forms.Padding(0, 35, 0, 0);
             this.uiTitlePanel3.ShowText = false;
-            this.uiTitlePanel3.Size = new System.Drawing.Size(368, 668);
+            this.uiTitlePanel3.Size = new System.Drawing.Size(371, 668);
             this.uiTitlePanel3.TabIndex = 11;
             this.uiTitlePanel3.Text = "考试项目组信息";
             this.uiTitlePanel3.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -492,6 +497,7 @@ namespace CamerADCore.GameSystem.GameWindow
             // 
             // uiTitlePanel4
             // 
+            this.uiTitlePanel4.AutoSize = true;
             this.uiTitlePanel4.Controls.Add(this.CurrentGroupStudentData);
             this.uiTitlePanel4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiTitlePanel4.Location = new System.Drawing.Point(4, 82);
@@ -500,7 +506,7 @@ namespace CamerADCore.GameSystem.GameWindow
             this.uiTitlePanel4.Name = "uiTitlePanel4";
             this.uiTitlePanel4.Padding = new System.Windows.Forms.Padding(0, 35, 0, 0);
             this.uiTitlePanel4.ShowText = false;
-            this.uiTitlePanel4.Size = new System.Drawing.Size(360, 581);
+            this.uiTitlePanel4.Size = new System.Drawing.Size(363, 581);
             this.uiTitlePanel4.TabIndex = 4;
             this.uiTitlePanel4.Text = "本组考生信息";
             this.uiTitlePanel4.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -509,18 +515,18 @@ namespace CamerADCore.GameSystem.GameWindow
             // CurrentGroupStudentData
             // 
             this.CurrentGroupStudentData.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
-            this.CurrentGroupStudentData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
+            this.CurrentGroupStudentData.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle6;
             this.CurrentGroupStudentData.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
             this.CurrentGroupStudentData.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.CurrentGroupStudentData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.CurrentGroupStudentData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.CurrentGroupStudentData.ColumnHeadersHeight = 32;
             this.CurrentGroupStudentData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.CurrentGroupStudentData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -530,40 +536,42 @@ namespace CamerADCore.GameSystem.GameWindow
             this.Column4,
             this.Column5,
             this.Column6});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(236)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.CurrentGroupStudentData.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(236)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.CurrentGroupStudentData.DefaultCellStyle = dataGridViewCellStyle8;
             this.CurrentGroupStudentData.EnableHeadersVisualStyles = false;
             this.CurrentGroupStudentData.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.CurrentGroupStudentData.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(173)))), ((int)(((byte)(255)))));
             this.CurrentGroupStudentData.Location = new System.Drawing.Point(4, 38);
             this.CurrentGroupStudentData.Name = "CurrentGroupStudentData";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.CurrentGroupStudentData.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(236)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
-            this.CurrentGroupStudentData.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.CurrentGroupStudentData.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(236)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(48)))), ((int)(((byte)(48)))), ((int)(((byte)(48)))));
+            this.CurrentGroupStudentData.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.CurrentGroupStudentData.RowTemplate.Height = 23;
             this.CurrentGroupStudentData.ScrollBarRectColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(160)))), ((int)(((byte)(255)))));
             this.CurrentGroupStudentData.SelectedIndex = -1;
+            this.CurrentGroupStudentData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.CurrentGroupStudentData.Size = new System.Drawing.Size(356, 540);
             this.CurrentGroupStudentData.TabIndex = 0;
             this.scrollbarComponent1.SetUserCustomScrollbar(this.CurrentGroupStudentData, true);
             this.CurrentGroupStudentData.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.CurrentGroupStudentData.CellMouseDown += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.CurrentGroupStudentData_CellMouseDown);
             // 
             // Column1
             // 
@@ -647,6 +655,7 @@ namespace CamerADCore.GameSystem.GameWindow
             // 
             // uiTitlePanel2
             // 
+            this.uiTitlePanel2.AutoSize = true;
             this.uiTitlePanel2.Controls.Add(this.flowLayoutPanel1);
             this.uiTitlePanel2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiTitlePanel2.Location = new System.Drawing.Point(9, 221);
@@ -655,7 +664,7 @@ namespace CamerADCore.GameSystem.GameWindow
             this.uiTitlePanel2.Name = "uiTitlePanel2";
             this.uiTitlePanel2.Padding = new System.Windows.Forms.Padding(0, 35, 0, 0);
             this.uiTitlePanel2.ShowText = false;
-            this.uiTitlePanel2.Size = new System.Drawing.Size(1269, 642);
+            this.uiTitlePanel2.Size = new System.Drawing.Size(4077, 642);
             this.uiTitlePanel2.TabIndex = 10;
             this.uiTitlePanel2.Text = "考试设备信息";
             this.uiTitlePanel2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -678,7 +687,7 @@ namespace CamerADCore.GameSystem.GameWindow
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(0, 35);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(1269, 607);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(4077, 607);
             this.flowLayoutPanel1.TabIndex = 0;
             this.scrollbarComponent1.SetUserCustomScrollbar(this.flowLayoutPanel1, true);
             // 
@@ -723,7 +732,7 @@ namespace CamerADCore.GameSystem.GameWindow
             // 
             // userControl15
             // 
-            this.userControl15.Location = new System.Drawing.Point(5, 424);
+            this.userControl15.Location = new System.Drawing.Point(1211, 5);
             this.userControl15.Margin = new System.Windows.Forms.Padding(5);
             this.userControl15.Name = "userControl15";
             this.userControl15.panel_idNumber = "等待分配";
@@ -736,7 +745,7 @@ namespace CamerADCore.GameSystem.GameWindow
             // 
             // userControl13
             // 
-            this.userControl13.Location = new System.Drawing.Point(411, 428);
+            this.userControl13.Location = new System.Drawing.Point(1617, 9);
             this.userControl13.Margin = new System.Windows.Forms.Padding(8, 9, 8, 9);
             this.userControl13.Name = "userControl13";
             this.userControl13.panel_idNumber = "等待分配";
@@ -749,7 +758,7 @@ namespace CamerADCore.GameSystem.GameWindow
             // 
             // userControl16
             // 
-            this.userControl16.Location = new System.Drawing.Point(824, 424);
+            this.userControl16.Location = new System.Drawing.Point(2030, 5);
             this.userControl16.Margin = new System.Windows.Forms.Padding(5);
             this.userControl16.Name = "userControl16";
             this.userControl16.panel_idNumber = "等待分配";
@@ -762,7 +771,7 @@ namespace CamerADCore.GameSystem.GameWindow
             // 
             // userControl17
             // 
-            this.userControl17.Location = new System.Drawing.Point(5, 908);
+            this.userControl17.Location = new System.Drawing.Point(2423, 5);
             this.userControl17.Margin = new System.Windows.Forms.Padding(5);
             this.userControl17.Name = "userControl17";
             this.userControl17.panel_idNumber = "等待分配";
@@ -775,7 +784,7 @@ namespace CamerADCore.GameSystem.GameWindow
             // 
             // userControl18
             // 
-            this.userControl18.Location = new System.Drawing.Point(408, 908);
+            this.userControl18.Location = new System.Drawing.Point(2826, 5);
             this.userControl18.Margin = new System.Windows.Forms.Padding(5);
             this.userControl18.Name = "userControl18";
             this.userControl18.panel_idNumber = "等待分配";
@@ -788,7 +797,7 @@ namespace CamerADCore.GameSystem.GameWindow
             // 
             // userControl19
             // 
-            this.userControl19.Location = new System.Drawing.Point(821, 908);
+            this.userControl19.Location = new System.Drawing.Point(3239, 5);
             this.userControl19.Margin = new System.Windows.Forms.Padding(5);
             this.userControl19.Name = "userControl19";
             this.userControl19.panel_idNumber = "等待分配";
@@ -801,7 +810,7 @@ namespace CamerADCore.GameSystem.GameWindow
             // 
             // userControl110
             // 
-            this.userControl110.Location = new System.Drawing.Point(5, 1320);
+            this.userControl110.Location = new System.Drawing.Point(3670, 5);
             this.userControl110.Margin = new System.Windows.Forms.Padding(5);
             this.userControl110.Name = "userControl110";
             this.userControl110.panel_idNumber = "等待分配";
@@ -939,9 +948,10 @@ namespace CamerADCore.GameSystem.GameWindow
             this.缺考ToolStripMenuItem,
             this.弃权ToolStripMenuItem,
             this.中退ToolStripMenuItem,
-            this.犯规ToolStripMenuItem});
+            this.犯规ToolStripMenuItem,
+            this.成绩重测ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(125, 114);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(181, 158);
             // 
             // 修正成绩ToolStripMenuItem
             // 
@@ -984,21 +994,27 @@ namespace CamerADCore.GameSystem.GameWindow
             this.timer1.Interval = 200;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // 成绩重测ToolStripMenuItem
+            // 
+            this.成绩重测ToolStripMenuItem.Name = "成绩重测ToolStripMenuItem";
+            this.成绩重测ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.成绩重测ToolStripMenuItem.Text = "成绩重测";
+            this.成绩重测ToolStripMenuItem.Click += new System.EventHandler(this.成绩重测ToolStripMenuItem_Click);
+            // 
             // RunningTestingWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1660, 942);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.uiTitlePanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RunningTestingWindow";
             this.Text = "仰卧起坐测试管理页面";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.RunningTestingWindow_FormClosing);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.RunningTestingWindow_FormClosed);
             this.Load += new System.EventHandler(this.RunningTestingWindow_Load);
             this.SizeChanged += new System.EventHandler(this.RunningTestingWindow_SizeChanged);
             this.uiTitlePanel1.ResumeLayout(false);
+            this.uiTitlePanel1.PerformLayout();
             this.uiGroupBox5.ResumeLayout(false);
             this.uiGroupBox4.ResumeLayout(false);
             this.uiGroupBox3.ResumeLayout(false);
@@ -1097,5 +1113,6 @@ namespace CamerADCore.GameSystem.GameWindow
         private MyControll.UserControl1 userControl18;
         private MyControll.UserControl1 userControl19;
         private MyControll.UserControl1 userControl110;
+        private System.Windows.Forms.ToolStripMenuItem 成绩重测ToolStripMenuItem;
     }
 }

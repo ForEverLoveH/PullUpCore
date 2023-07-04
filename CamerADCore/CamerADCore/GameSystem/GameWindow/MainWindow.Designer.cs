@@ -77,7 +77,6 @@
             this.uiTitlePanel1.Text = "德育龙测试系统";
             this.uiTitlePanel1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.uiTitlePanel1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            //this.uiTitlePanel1.Load += new System.EventHandler(this.uiTitlePanel1_Load);
             // 
             // ucProcessLine1
             // 
@@ -100,6 +99,7 @@
             // 
             // uiTitlePanel3
             // 
+            this.uiTitlePanel3.AutoSize = true;
             this.uiTitlePanel3.Controls.Add(this.StudentDataListview);
             this.uiTitlePanel3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiTitlePanel3.Location = new System.Drawing.Point(479, 76);
@@ -126,6 +126,7 @@
             // 
             // uiTitlePanel2
             // 
+            this.uiTitlePanel2.AutoSize = true;
             this.uiTitlePanel2.Controls.Add(this.GroupTreeView);
             this.uiTitlePanel2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiTitlePanel2.Location = new System.Drawing.Point(4, 76);
@@ -322,9 +323,9 @@
             // 
             // MainWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1501, 819);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(1404, 819);
             this.Controls.Add(this.uiTitlePanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainWindow";
@@ -334,6 +335,7 @@
             this.Load += new System.EventHandler(this.MainWindow_Load);
             this.SizeChanged += new System.EventHandler(this.MainWindow_SizeChanged);
             this.uiTitlePanel1.ResumeLayout(false);
+            this.uiTitlePanel1.PerformLayout();
             this.uiTitlePanel3.ResumeLayout(false);
             this.uiTitlePanel2.ResumeLayout(false);
             this.ResumeLayout(false);

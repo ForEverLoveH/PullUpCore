@@ -39,7 +39,7 @@ namespace CamerADCore.GameSystem.GameWindow
 
         private void FrmModifyScoreOneRoundWindow_Load(object sender, EventArgs e)
         {
-            var sl =    FrmModifyScoreOneRoundSys.Instance.LoadingInitPersonData(personId, IdNumber);
+            var sl =    FrmModifyScoreOneRoundSys.Instance.LoadingInitPersonData(projectId, IdNumber);
             if (sl.Count > 0)
                 personId = sl["Id"];
             var sls = FrmModifyScoreOneRoundSys.Instance.LoadingScoreData(personId, roundId);

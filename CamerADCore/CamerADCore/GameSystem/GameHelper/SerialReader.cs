@@ -14,9 +14,10 @@ namespace CamerADCore.GameSystem.GameHelper
     public delegate void SendDataCallback(byte[] btArySendData);
 
     public delegate void AnalyDataCallback(SerialMessageTran msgTran);
+
     public class SerialReader
     {
-        public System.IO.Ports.SerialPort iSerialPort;
+        public SerialPort iSerialPort;
         private int m_nType = -1;
         public ReciveDataCallback ReceiveCallback;
         public SendDataCallback SendCallback;
@@ -69,13 +70,7 @@ namespace CamerADCore.GameSystem.GameHelper
             iSerialPort = new SerialPort();
             iSerialPort.DataReceived += new SerialDataReceivedEventHandler(ReceivedComData);
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="strPort"></param>
-        /// <param name="nBaudrate"></param>
-        /// <param name="strException"></param>
-        /// <returns></returns>
+
         public int OpenCom(string strPort, int nBaudrate, out string strException)
         {
             strException = string.Empty;
@@ -132,7 +127,9 @@ namespace CamerADCore.GameSystem.GameHelper
                 LoggerHelper.Debug(ex);
             }
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
         private void OpenHandleBytesTimer()
         {
             try

@@ -20,7 +20,7 @@ namespace CamerADCore.GameSystem.GameWindow
         }
          private  List<ProjectModel> projects = new List<ProjectModel>();
          private string projectID = string.Empty;
-        AutoSizeFormClass asc = new AutoSizeFormClass();
+        AutoSizeFormClass asc = null;
         /// <summary>
         /// 
         /// </summary>
@@ -29,7 +29,7 @@ namespace CamerADCore.GameSystem.GameWindow
         private void ProjectSettingWindow_Load(object sender, System.EventArgs e)
         {
             Control.CheckForIllegalCrossThreadCalls = false;
-             asc.controllInitializeSize(this);
+          ///   asc.controllInitializeSize(this);
            
             ProjectSettingWindowSys.Instance.UpDataProjectListView(ProjectTreeView, ref projects);
         }
@@ -171,26 +171,29 @@ namespace CamerADCore.GameSystem.GameWindow
         /// <param name="e"></param>
         private void 删除项目ToolStripMenuItem_Click(object sender, System.EventArgs e)
         {
-            if (ProjectTreeView.SelectedNode.Level != 0)
+            if (ProjectTreeView.SelectedNode != null)
             {
-                FrmTips.ShowTipsInfo(this, "请选择一个项目");
-                return;
-            }
-            else
-            {
-                string projectName = ProjectTreeView.SelectedNode.Text;
-                DialogResult dialog = MessageBox.Show($"该操作将会删除{projectName }项目，是否继续？", "提示", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
-                if (dialog == DialogResult.Yes|| dialog==DialogResult.OK)
-                { 
-                    if(ProjectSettingWindowSys.Instance.DeleteProjectData(projectName))
+                if (ProjectTreeView.SelectedNode.Level != 0)
+                {
+                    FrmTips.ShowTipsInfo(this, "请选择一个项目");
+                    return;
+                }
+                else
+                {
+                    string projectName = ProjectTreeView.SelectedNode.Text;
+                    DialogResult dialog = MessageBox.Show($"该操作将会删除{projectName}项目，是否继续？", "提示", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+                    if (dialog == DialogResult.Yes || dialog == DialogResult.OK)
                     {
-                        UIMessageBox.ShowSuccess($"项目{projectName}删除成功！！");
-                        ucDataGridView1.DataSource = null;
-                        ProjectSettingWindowSys.Instance.UpDataProjectListView(ProjectTreeView, ref projects);
-                    }
-                    else
-                    {
-                        UIMessageBox.ShowError($"项目{projectName}删除失败！！"); return;
+                        if (ProjectSettingWindowSys.Instance.DeleteProjectData(projectName))
+                        {
+                            UIMessageBox.ShowSuccess($"项目{projectName}删除成功！！");
+                            ucDataGridView1.DataSource = null;
+                            ProjectSettingWindowSys.Instance.UpDataProjectListView(ProjectTreeView, ref projects);
+                        }
+                        else
+                        {
+                            UIMessageBox.ShowError($"项目{projectName}删除失败！！"); return;
+                        }
                     }
                 }
             }
@@ -203,14 +206,21 @@ namespace CamerADCore.GameSystem.GameWindow
         /// <param name="e"></param>
         private void uiButton3_Click(object sender, System.EventArgs e)
         {
-            if(ProjectSettingWindowSys.Instance.ShowPersonImportDataWindow(txt_projectName.Text))
-            {
-                 UIMessageBox.ShowSuccess("名单导入成功！！");
-                 ProjectSettingWindowSys.Instance.UpDataProjectListView(ProjectTreeView, ref projects);  
+            if (!string.IsNullOrEmpty(txt_projectName.Text.Trim())){
+                if (ProjectSettingWindowSys.Instance.ShowPersonImportDataWindow(txt_projectName.Text))
+                {
+                    UIMessageBox.ShowSuccess("名单导入成功！！");
+                    ProjectSettingWindowSys.Instance.UpDataProjectListView(ProjectTreeView, ref projects);
+                }
+                else
+                {
+                    UIMessageBox.ShowError("名单导入失败！！");
+                    return;
+                }
             }
             else
             {
-                UIMessageBox.ShowError("名单导入失败！！");
+                UIMessageBox.ShowWarning("请先确定项目信息！！");
                 return;
             }
         }
@@ -272,7 +282,7 @@ namespace CamerADCore.GameSystem.GameWindow
 
         private void ProjectSettingWindow_SizeChanged(object sender, EventArgs e)
         {
-            asc.controlAutoSize(this);
+           // asc.controlAutoSize(this);
         }
     }
 }

@@ -33,12 +33,12 @@
             this.uiButton4 = new Sunny.UI.UIButton();
             this.uiButton3 = new Sunny.UI.UIButton();
             this.uiButton2 = new Sunny.UI.UIButton();
-            this.uiComboBox1 = new Sunny.UI.UIComboBox();
+            this.ComboBox1 = new Sunny.UI.UIComboBox();
             this.uiLabel3 = new Sunny.UI.UILabel();
             this.uiButton1 = new Sunny.UI.UIButton();
-            this.uiCombox3 = new Sunny.UI.UIComboBox();
+            this.combox3 = new Sunny.UI.UIComboBox();
             this.uiLabel2 = new Sunny.UI.UILabel();
-            this.uiComboBox2 = new Sunny.UI.UIComboBox();
+            this.ComboBox2 = new Sunny.UI.UIComboBox();
             this.uiLabel1 = new Sunny.UI.UILabel();
             this.uiTitlePanel1.SuspendLayout();
             this.SuspendLayout();
@@ -48,12 +48,12 @@
             this.uiTitlePanel1.Controls.Add(this.uiButton4);
             this.uiTitlePanel1.Controls.Add(this.uiButton3);
             this.uiTitlePanel1.Controls.Add(this.uiButton2);
-            this.uiTitlePanel1.Controls.Add(this.uiComboBox1);
+            this.uiTitlePanel1.Controls.Add(this.ComboBox1);
             this.uiTitlePanel1.Controls.Add(this.uiLabel3);
             this.uiTitlePanel1.Controls.Add(this.uiButton1);
-            this.uiTitlePanel1.Controls.Add(this.uiCombox3);
+            this.uiTitlePanel1.Controls.Add(this.combox3);
             this.uiTitlePanel1.Controls.Add(this.uiLabel2);
-            this.uiTitlePanel1.Controls.Add(this.uiComboBox2);
+            this.uiTitlePanel1.Controls.Add(this.ComboBox2);
             this.uiTitlePanel1.Controls.Add(this.uiLabel1);
             this.uiTitlePanel1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiTitlePanel1.Location = new System.Drawing.Point(3, -1);
@@ -110,21 +110,21 @@
             this.uiButton2.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             this.uiButton2.Click += new System.EventHandler(this.uiButton2_Click);
             // 
-            // uiComboBox1
+            // ComboBox1
             // 
-            this.uiComboBox1.DataSource = null;
-            this.uiComboBox1.FillColor = System.Drawing.Color.White;
-            this.uiComboBox1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiComboBox1.Location = new System.Drawing.Point(137, 171);
-            this.uiComboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiComboBox1.MinimumSize = new System.Drawing.Size(63, 0);
-            this.uiComboBox1.Name = "uiComboBox1";
-            this.uiComboBox1.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.uiComboBox1.Size = new System.Drawing.Size(223, 29);
-            this.uiComboBox1.TabIndex = 6;
-            this.uiComboBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiComboBox1.Watermark = "";
-            this.uiComboBox1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.ComboBox1.DataSource = null;
+            this.ComboBox1.FillColor = System.Drawing.Color.White;
+            this.ComboBox1.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ComboBox1.Location = new System.Drawing.Point(137, 171);
+            this.ComboBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ComboBox1.MinimumSize = new System.Drawing.Size(63, 0);
+            this.ComboBox1.Name = "ComboBox1";
+            this.ComboBox1.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.ComboBox1.Size = new System.Drawing.Size(223, 29);
+            this.ComboBox1.TabIndex = 6;
+            this.ComboBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ComboBox1.Watermark = "";
+            this.ComboBox1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // uiLabel3
             // 
@@ -151,21 +151,21 @@
             this.uiButton1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             this.uiButton1.Click += new System.EventHandler(this.uiButton1_Click);
             // 
-            // uiCombox3
+            // combox3
             // 
-            this.uiCombox3.DataSource = null;
-            this.uiCombox3.FillColor = System.Drawing.Color.White;
-            this.uiCombox3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiCombox3.Location = new System.Drawing.Point(137, 119);
-            this.uiCombox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiCombox3.MinimumSize = new System.Drawing.Size(63, 0);
-            this.uiCombox3.Name = "uiCombox3";
-            this.uiCombox3.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.uiCombox3.Size = new System.Drawing.Size(223, 29);
-            this.uiCombox3.TabIndex = 3;
-            this.uiCombox3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiCombox3.Watermark = "";
-            this.uiCombox3.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.combox3.DataSource = null;
+            this.combox3.FillColor = System.Drawing.Color.White;
+            this.combox3.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.combox3.Location = new System.Drawing.Point(137, 119);
+            this.combox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.combox3.MinimumSize = new System.Drawing.Size(63, 0);
+            this.combox3.Name = "combox3";
+            this.combox3.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.combox3.Size = new System.Drawing.Size(223, 29);
+            this.combox3.TabIndex = 3;
+            this.combox3.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.combox3.Watermark = "";
+            this.combox3.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // uiLabel2
             // 
@@ -178,21 +178,21 @@
             this.uiLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.uiLabel2.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
-            // uiComboBox2
+            // ComboBox2
             // 
-            this.uiComboBox2.DataSource = null;
-            this.uiComboBox2.FillColor = System.Drawing.Color.White;
-            this.uiComboBox2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.uiComboBox2.Location = new System.Drawing.Point(137, 74);
-            this.uiComboBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.uiComboBox2.MinimumSize = new System.Drawing.Size(63, 0);
-            this.uiComboBox2.Name = "uiComboBox2";
-            this.uiComboBox2.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
-            this.uiComboBox2.Size = new System.Drawing.Size(343, 32);
-            this.uiComboBox2.TabIndex = 1;
-            this.uiComboBox2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.uiComboBox2.Watermark = "";
-            this.uiComboBox2.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.ComboBox2.DataSource = null;
+            this.ComboBox2.FillColor = System.Drawing.Color.White;
+            this.ComboBox2.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.ComboBox2.Location = new System.Drawing.Point(137, 74);
+            this.ComboBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ComboBox2.MinimumSize = new System.Drawing.Size(63, 0);
+            this.ComboBox2.Name = "ComboBox2";
+            this.ComboBox2.Padding = new System.Windows.Forms.Padding(0, 0, 30, 2);
+            this.ComboBox2.Size = new System.Drawing.Size(343, 32);
+            this.ComboBox2.TabIndex = 1;
+            this.ComboBox2.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ComboBox2.Watermark = "";
+            this.ComboBox2.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // uiLabel1
             // 
@@ -217,6 +217,7 @@
             this.Load += new System.EventHandler(this.EquipMentSettingWindow_Load);
             this.uiTitlePanel1.ResumeLayout(false);
             this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -225,12 +226,12 @@
         private Sunny.UI.UIButton uiButton4;
         private Sunny.UI.UIButton uiButton3;
         private Sunny.UI.UIButton uiButton2;
-        private Sunny.UI.UIComboBox uiComboBox1;
+        private Sunny.UI.UIComboBox ComboBox1;
         private Sunny.UI.UILabel uiLabel3;
         private Sunny.UI.UIButton uiButton1;
-        private Sunny.UI.UIComboBox uiCombox3;
+        private Sunny.UI.UIComboBox combox3;
         private Sunny.UI.UILabel uiLabel2;
-        private Sunny.UI.UIComboBox uiComboBox2;
+        private Sunny.UI.UIComboBox ComboBox2;
         private Sunny.UI.UILabel uiLabel1;
     }
 }

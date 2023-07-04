@@ -36,7 +36,7 @@ namespace CamerADCore.GameSystem.GameWindowSys
             FrmModifyScoreOneRound.projectId = projectId;
             FrmModifyScoreOneRound.groupName = groupname;
             FrmModifyScoreOneRound.IdNumber = idNumber;
-            FrmModifyScoreOneRound.Name = name;
+            FrmModifyScoreOneRound.stuName = name;
             FrmModifyScoreOneRound.roundId = currentRoundCount;
             if (FrmModifyScoreOneRound.ShowDialog() == DialogResult.OK ||
                 FrmModifyScoreOneRound.ShowDialog() == DialogResult.Yes)

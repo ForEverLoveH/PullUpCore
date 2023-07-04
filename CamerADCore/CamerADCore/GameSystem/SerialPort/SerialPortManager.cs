@@ -107,7 +107,7 @@ namespace CamerADCore.GameSystem
         /// <param name="serialReader"></param>
         /// <param name="strComPort">串口号</param>
         /// <returns></returns>
-        public bool OpenSerialPortConnection(SerialReader serialReader,string strComPort )
+        public bool  OpenSerialPortConnection(SerialReader serialReader,string strComPort )
         {
             try
             {

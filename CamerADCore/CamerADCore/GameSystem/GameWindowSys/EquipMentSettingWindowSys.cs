@@ -178,71 +178,7 @@ namespace CamerADCore.GameSystem.GameWindowSys
                 return false;
             }
         }
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="ExamIDDrop"></param>
-        /// <param name="uiComboBox1"></param>
-        /// <param name="uiComboBox3"></param>
-        /// <param name="localValues"></param>
-        /// <returns></returns>
-        public bool GetExamNumber(UIComboBox ExamIDDrop,UIComboBox uiComboBox1,UIComboBox  uiComboBox3,Dictionary<string, string> localValues)
-        {
-            try
-            {
-                ExamIDDrop.Items.Clear();
-                string url = uiComboBox1.Text;
-                if (string.IsNullOrEmpty(url))
-                {
-                    UIMessageBox.ShowError( "网址为空!");
-                    return false;
-                }
-                url += RequestUrl.GetExamListUrl;
-                RequestParameter RequestParameter = new RequestParameter();
-                RequestParameter.AdminUserName = localValues["AdminUserName"];
-                RequestParameter.TestManUserName = localValues["TestManUserName"];
-                RequestParameter.TestManPassword = localValues["TestManPassword"];
-                //序列化
-                string JsonStr = Newtonsoft.Json.JsonConvert.SerializeObject(RequestParameter);
-                var formDatas = new List<FormItemModel>();
-                //添加其他字段
-                formDatas.Add(new FormItemModel()
-                {
-                    Key = "data",
-                    Value = JsonStr
-                });
-                string result = HttpUpload.PostForm(url, formDatas);
-                GetExamList upload_Result = JsonConvert.DeserializeObject<GetExamList>(result);
-                if (upload_Result == null || upload_Result.Results == null || upload_Result.Results.Count == 0)
-                {
-                    string error = string.Empty;
-                    try
-                    {
-                        error = upload_Result.Error;
-                    }
-                    catch (Exception exception)
-                    {
-                        LoggerHelper.Debug(exception);
-                        error = string.Empty;
-                    }
-                    UIMessageBox.ShowError( $"提交错误,错误码:[{error}]");
-                    return false;
-                }
-                foreach (var item in upload_Result.Results)
-                {
-                    string str = $"{item.title}_{item.exam_id}";
-                    uiComboBox3.Items.Add(str);
-                }
-
-                return true;
-            }
-            catch (Exception e)
-            {
-                LoggerHelper.Debug(e);
-                return false;
-            }
-             
-        }
+       
         /// <summary>
         /// 
         /// </summary>
